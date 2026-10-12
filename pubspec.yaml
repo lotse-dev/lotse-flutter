@@ -1,0 +1,44 @@
+name: lotse
+description: >-
+  Deep links, attribution, analytics, in-app feedback and push for Flutter
+  apps, on one event stream with the Lotse backend.
+version: 0.1.0
+homepage: https://lotse.dev
+repository: https://github.com/lotse-dev/lotse-flutter
+issue_tracker: https://github.com/lotse-dev/lotse-flutter/issues
+topics:
+  - deep-linking
+  - analytics
+  - attribution
+  - feedback
+  - push-notifications
+
+environment:
+  sdk: ^3.12.2
+  flutter: '>=3.44.4'
+
+dependencies:
+  device_info_plus: ^13.3.0
+  firebase_core: ^4.15.0
+  firebase_messaging: ^16.7.0
+  flutter:
+    sdk: flutter
+  flutter_secure_storage: ^11.2.0
+  package_info_plus: ^10.2.2
+  play_install_referrer: ^0.5.0
+  http: ^1.6.0
+  serverpod_auth_core_client: ^4.0.4
+  serverpod_auth_idp_client: ^4.0.4
+  serverpod_client: ^4.0.4
+  serverpod_flutter: ^4.0.4
+  shared_preferences: ^2.5.6
+  uuid: ^4.6.0
+  flutter_local_notifications: ^22.3.1
+
+dev_dependencies:
+  flutter_lints: '>=3.0.0 <7.0.0'
+  flutter_test:
+    sdk: flutter
+  # Only to test that LotseScope.navigatorKey works with the router the demo
+  # app and most host apps use.
+  go_router: ^18.0.2
