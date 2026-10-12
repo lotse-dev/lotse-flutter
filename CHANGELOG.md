@@ -1,3 +1,8 @@
+## 0.1.1
+
+* pub.dev lists iOS and web next to Android. The SDK ran there already; only the install referrer is Android only, and the SDK skips it elsewhere.
+* The README explains how to install the agent skills with the `skills` CLI.
+
 ## 0.1.0
 
 First release on pub.dev.

@@ -541,10 +541,19 @@ and the feature board.
 
 ## AI agents
 
-`skills/` holds agent skills in the [agentskills.io](https://agentskills.io) format,
-for Claude Code, Cursor, Codex and other agents: `lotse-setup`, `lotse-events`,
-`lotse-deep-links`, `lotse-push`, `lotse-feedback` and `lotse-mcp` (working with a
-project through the Lotse MCP server; create the token in the console under project
-settings → AI agents, and never write it into files in your repository). Copy the folders into your agent's skills
-directory, e.g. `.claude/skills/`. `tool/sync_skills.sh` mirrors them into the public
-skills repository.
+The package ships agent skills in the [agentskills.io](https://agentskills.io)
+format, for Claude Code, Cursor, Codex and other agents: `lotse-setup`,
+`lotse-events`, `lotse-deep-links`, `lotse-push`, `lotse-feedback` and `lotse-mcp`
+(working with a project through the Lotse MCP server; create the token in the
+console under project settings → AI agents, and never write it into files in your
+repository).
+
+Install them into your app with the [skills](https://pub.dev/packages/skills) CLI,
+which finds the skills of every package your app depends on:
+
+```bash
+dart pub global activate skills
+skills get --package lotse --all
+```
+
+Run `skills get` again after updating `lotse` to update the skills.
