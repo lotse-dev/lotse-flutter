@@ -17,10 +17,7 @@ import 'app_user.dart' as _i2j2xfrn;
 /// A user in the console's list, see AnalyticsEndpoint.listUsers.
 abstract class AppUserListItem
     implements _isc.SerializableModel, _isc.ProtocolSerialization {
-  AppUserListItem._({
-    required this.user,
-    required this.devices,
-  });
+  AppUserListItem._({required this.user, required this.devices});
 
   factory AppUserListItem({
     required _i2j2xfrn.AppUser user,
@@ -44,10 +41,7 @@ abstract class AppUserListItem
   /// Returns a shallow copy of this [AppUserListItem]
   /// with some or all fields replaced by the given arguments.
   @_isc.useResult
-  AppUserListItem copyWith({
-    _i2j2xfrn.AppUser? user,
-    int? devices,
-  });
+  AppUserListItem copyWith({_i2j2xfrn.AppUser? user, int? devices});
   @override
   Map<String, dynamic> toJson() {
     return {
@@ -73,22 +67,14 @@ abstract class AppUserListItem
 }
 
 class _AppUserListItemImpl extends AppUserListItem {
-  _AppUserListItemImpl({
-    required _i2j2xfrn.AppUser user,
-    required int devices,
-  }) : super._(
-         user: user,
-         devices: devices,
-       );
+  _AppUserListItemImpl({required _i2j2xfrn.AppUser user, required int devices})
+    : super._(user: user, devices: devices);
 
   /// Returns a shallow copy of this [AppUserListItem]
   /// with some or all fields replaced by the given arguments.
   @_isc.useResult
   @override
-  AppUserListItem copyWith({
-    _i2j2xfrn.AppUser? user,
-    int? devices,
-  }) {
+  AppUserListItem copyWith({_i2j2xfrn.AppUser? user, int? devices}) {
     return AppUserListItem(
       user: user ?? this.user.copyWith(),
       devices: devices ?? this.devices,

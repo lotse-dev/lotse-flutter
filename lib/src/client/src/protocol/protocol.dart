@@ -13,12 +13,15 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:lotse/src/client/src/protocol/agent_token.dart' as _izywjc6s;
 import 'package:lotse/src/client/src/protocol/api_key.dart' as _imzvo1nf;
-import 'package:lotse/src/client/src/protocol/app_user_list_item.dart' as _itcuuu2x;
+import 'package:lotse/src/client/src/protocol/app_user_list_item.dart'
+    as _itcuuu2x;
 import 'package:lotse/src/client/src/protocol/campaign.dart' as _isnrua4r;
 import 'package:lotse/src/client/src/protocol/device.dart' as _illpjbsr;
 import 'package:lotse/src/client/src/protocol/event.dart' as _i7mn5lps;
-import 'package:lotse/src/client/src/protocol/feature_board_item.dart' as _iktk6feb;
-import 'package:lotse/src/client/src/protocol/feature_request.dart' as _i9ewlb1w;
+import 'package:lotse/src/client/src/protocol/feature_board_item.dart'
+    as _iktk6feb;
+import 'package:lotse/src/client/src/protocol/feature_request.dart'
+    as _i9ewlb1w;
 import 'package:lotse/src/client/src/protocol/funnel_step.dart' as _i1oe7xkk;
 import 'package:lotse/src/client/src/protocol/heatmap_background_slot.dart'
     as _iv0jmya8;
@@ -35,7 +38,8 @@ import 'package:lotse/src/client/src/protocol/project_invitation_info.dart'
     as _i729nurv;
 import 'package:lotse/src/client/src/protocol/project_member_info.dart'
     as _iiynwmmr;
-import 'package:lotse/src/client/src/protocol/sdk_in_app_message.dart' as _izpbyx5h;
+import 'package:lotse/src/client/src/protocol/sdk_in_app_message.dart'
+    as _izpbyx5h;
 import 'package:lotse/src/client/src/protocol/segment.dart' as _i0v8239j;
 import 'package:lotse/src/client/src/protocol/survey.dart' as _i9wfizaq;
 import 'package:lotse/src/client/src/protocol/tracked_event.dart' as _inlxo86g;
@@ -313,10 +317,7 @@ class Protocol extends _isc.SerializationManager {
   }
 
   @override
-  T deserialize<T>(
-    dynamic data, [
-    Type? t,
-  ]) {
+  T deserialize<T>(dynamic data, [Type? t]) {
     t ??= T;
 
     final dataClassName = getClassNameFromObjectJson(data);

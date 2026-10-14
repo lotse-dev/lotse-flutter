@@ -310,15 +310,7 @@ class _FeedbackImpl extends Feedback {
       lastScreen: lastScreen is String? ? lastScreen : this.lastScreen,
       metadata: metadata is Map<String, String>?
           ? metadata
-          : this.metadata?.map(
-              (
-                key0,
-                value0,
-              ) => MapEntry(
-                key0,
-                value0,
-              ),
-            ),
+          : this.metadata?.map((key0, value0) => MapEntry(key0, value0)),
       sessionId: sessionId is String? ? sessionId : this.sessionId,
       createdAt: createdAt ?? this.createdAt,
       updatedAt: updatedAt ?? this.updatedAt,

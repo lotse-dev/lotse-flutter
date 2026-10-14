@@ -184,10 +184,8 @@ abstract class Campaign
       if (linkId != null) 'linkId': linkId,
       if (segment != null)
         'segment': segment?.toJson(
-          valueToJson: (v) => _ist2d7e6.Protocol().dynamicFieldToJson(
-            v,
-            forProtocol: true,
-          ),
+          valueToJson: (v) =>
+              _ist2d7e6.Protocol().dynamicFieldToJson(v, forProtocol: true),
         ),
       'status': status.toJson(),
       if (scheduledAt != null) 'scheduledAt': scheduledAt?.toJson(),
@@ -269,15 +267,7 @@ class _CampaignImpl extends Campaign {
       linkId: linkId is int? ? linkId : this.linkId,
       segment: segment is Map<String, dynamic>?
           ? segment
-          : this.segment?.map(
-              (
-                key0,
-                value0,
-              ) => MapEntry(
-                key0,
-                value0,
-              ),
-            ),
+          : this.segment?.map((key0, value0) => MapEntry(key0, value0)),
       status: status ?? this.status,
       scheduledAt: scheduledAt is DateTime? ? scheduledAt : this.scheduledAt,
       sendAt: sendAt is DateTime? ? sendAt : this.sendAt,

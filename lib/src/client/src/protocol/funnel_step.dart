@@ -16,11 +16,7 @@ import 'package:serverpod_client/serverpod_client.dart' as _isc;
 /// must carry with exactly this value, e.g. screen_view with screen=product.
 abstract class FunnelStep
     implements _isc.SerializableModel, _isc.ProtocolSerialization {
-  FunnelStep._({
-    required this.name,
-    this.propKey,
-    this.propValue,
-  });
+  FunnelStep._({required this.name, this.propKey, this.propValue});
 
   factory FunnelStep({
     required String name,
@@ -46,11 +42,7 @@ abstract class FunnelStep
   /// Returns a shallow copy of this [FunnelStep]
   /// with some or all fields replaced by the given arguments.
   @_isc.useResult
-  FunnelStep copyWith({
-    String? name,
-    String? propKey,
-    String? propValue,
-  });
+  FunnelStep copyWith({String? name, String? propKey, String? propValue});
   @override
   Map<String, dynamic> toJson() {
     return {
@@ -80,15 +72,8 @@ abstract class FunnelStep
 class _Undefined {}
 
 class _FunnelStepImpl extends FunnelStep {
-  _FunnelStepImpl({
-    required String name,
-    String? propKey,
-    String? propValue,
-  }) : super._(
-         name: name,
-         propKey: propKey,
-         propValue: propValue,
-       );
+  _FunnelStepImpl({required String name, String? propKey, String? propValue})
+    : super._(name: name, propKey: propKey, propValue: propValue);
 
   /// Returns a shallow copy of this [FunnelStep]
   /// with some or all fields replaced by the given arguments.

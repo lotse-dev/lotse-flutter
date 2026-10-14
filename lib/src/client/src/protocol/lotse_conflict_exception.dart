@@ -39,18 +39,12 @@ abstract class LotseConflictException
   LotseConflictException copyWith({String? message});
   @override
   Map<String, dynamic> toJson() {
-    return {
-      '__className__': 'LotseConflictException',
-      'message': message,
-    };
+    return {'__className__': 'LotseConflictException', 'message': message};
   }
 
   @override
   Map<String, dynamic> toJsonForProtocol() {
-    return {
-      '__className__': 'LotseConflictException',
-      'message': message,
-    };
+    return {'__className__': 'LotseConflictException', 'message': message};
   }
 
   @override

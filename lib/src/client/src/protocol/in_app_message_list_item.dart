@@ -87,11 +87,7 @@ class _InAppMessageListItemImpl extends InAppMessageListItem {
     required _icz8bdg4.InAppMessage message,
     required int viewed,
     required int tapped,
-  }) : super._(
-         message: message,
-         viewed: viewed,
-         tapped: tapped,
-       );
+  }) : super._(message: message, viewed: viewed, tapped: tapped);
 
   /// Returns a shallow copy of this [InAppMessageListItem]
   /// with some or all fields replaced by the given arguments.

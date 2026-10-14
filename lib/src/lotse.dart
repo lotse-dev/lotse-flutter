@@ -38,7 +38,7 @@ import 'lotse_event_queue.dart';
 import 'lotse_replay_buffer.dart';
 import 'lotse_replay_recorder.dart';
 import 'lotse_replay_upload.dart';
-import 'push_channel.dart';
+import 'push_channel_stub.dart' if (dart.library.io) 'push_channel.dart';
 import 'push_tokens.dart';
 import 'lotse_log.dart';
 
@@ -429,6 +429,7 @@ class Lotse {
         osVersion: device.osVersion,
         locale: device.locale,
         appVersion: device.appVersion,
+        appBundleId: device.appBundleId,
         installReferrer: referrer,
       ),
       credential: credential,

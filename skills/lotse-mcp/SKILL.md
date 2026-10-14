@@ -25,8 +25,8 @@ create tokens, at most 10 active per project. Revoke them in the same place.
 | Level | Allows |
 |---|---|
 | Read (`read`) | every read tool |
-| Read and write (`write`) | plus the write tools only the team sees: segments, the status of feedback and ideas |
-| Read, write and publish (`publish`) | plus the tools that reach app users or the public: replies to feedback, ideas on the board, links |
+| Read and write (`write`) | plus the write tool only the team sees: saving segments |
+| Read, write and publish (`publish`) | plus the tools that reach app users or the public: replies to feedback, the status of feedback and ideas, ideas on the board, links |
 
 Pick the lowest level the task needs. `publish` is only for an agent the user wants to
 answer feedback or create ideas and links.
@@ -168,9 +168,9 @@ return at most 100 entries plus a cursor for the next page.
 | `create_link` | `publish` | new short link on the project's link domain (link quota; fallbacks must be `https`) |
 | `create_segment` | `write` | saves a segment (segment quota) |
 | `reply_to_feedback` | `publish` | sends a reply to the one person who wrote the message, as a push; cannot be taken back |
-| `set_feedback_status` | `write` | sets the status of a message |
+| `set_feedback_status` | `publish` | sets the status of a message; the sender sees it in the conversation |
 | `create_feature_request` | `publish` | new board entry that app users see (quota) |
-| `set_feature_request_status` | `write` | moves a board entry (e.g. planned, shipped) |
+| `set_feature_request_status` | `publish` | moves a board entry (e.g. planned, shipped); app users see it |
 
 Deliberately missing: creating, sending or scheduling campaigns; activating in-app
 messages or surveys; deleting anything; API keys, members, push credentials; CSV

@@ -16,11 +16,7 @@ import 'package:serverpod_client/serverpod_client.dart' as _isc;
 /// like a campaign by checkCampaignInput.
 abstract class JourneyVariantInput
     implements _isc.SerializableModel, _isc.ProtocolSerialization {
-  JourneyVariantInput._({
-    required this.title,
-    required this.body,
-    this.linkId,
-  });
+  JourneyVariantInput._({required this.title, required this.body, this.linkId});
 
   factory JourneyVariantInput({
     required String title,
@@ -46,11 +42,7 @@ abstract class JourneyVariantInput
   /// Returns a shallow copy of this [JourneyVariantInput]
   /// with some or all fields replaced by the given arguments.
   @_isc.useResult
-  JourneyVariantInput copyWith({
-    String? title,
-    String? body,
-    int? linkId,
-  });
+  JourneyVariantInput copyWith({String? title, String? body, int? linkId});
   @override
   Map<String, dynamic> toJson() {
     return {
@@ -84,11 +76,7 @@ class _JourneyVariantInputImpl extends JourneyVariantInput {
     required String title,
     required String body,
     int? linkId,
-  }) : super._(
-         title: title,
-         body: body,
-         linkId: linkId,
-       );
+  }) : super._(title: title, body: body, linkId: linkId);
 
   /// Returns a shallow copy of this [JourneyVariantInput]
   /// with some or all fields replaced by the given arguments.

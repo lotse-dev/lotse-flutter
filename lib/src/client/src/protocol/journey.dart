@@ -246,10 +246,8 @@ abstract class Journey
       'goalWindowHours': goalWindowHours,
       if (segment != null)
         'segment': segment?.toJson(
-          valueToJson: (v) => _ist2d7e6.Protocol().dynamicFieldToJson(
-            v,
-            forProtocol: true,
-          ),
+          valueToJson: (v) =>
+              _ist2d7e6.Protocol().dynamicFieldToJson(v, forProtocol: true),
         ),
       'holdoutPercent': holdoutPercent,
       'autoWinner': autoWinner,
@@ -359,15 +357,7 @@ class _JourneyImpl extends Journey {
       goalWindowHours: goalWindowHours ?? this.goalWindowHours,
       segment: segment is Map<String, dynamic>?
           ? segment
-          : this.segment?.map(
-              (
-                key0,
-                value0,
-              ) => MapEntry(
-                key0,
-                value0,
-              ),
-            ),
+          : this.segment?.map((key0, value0) => MapEntry(key0, value0)),
       holdoutPercent: holdoutPercent ?? this.holdoutPercent,
       autoWinner: autoWinner ?? this.autoWinner,
       winnerVariant: winnerVariant is int? ? winnerVariant : this.winnerVariant,

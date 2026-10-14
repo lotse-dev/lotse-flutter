@@ -17,10 +17,7 @@ import 'heatmap_width_class.dart' as _ibbfwb4e;
 /// `SdkEndpoint.submitTaps`. Platform and app version are the device's own.
 abstract class HeatmapBackgroundSlot
     implements _isc.SerializableModel, _isc.ProtocolSerialization {
-  HeatmapBackgroundSlot._({
-    required this.screen,
-    required this.widthClass,
-  });
+  HeatmapBackgroundSlot._({required this.screen, required this.widthClass});
 
   factory HeatmapBackgroundSlot({
     required String screen,
@@ -77,10 +74,7 @@ class _HeatmapBackgroundSlotImpl extends HeatmapBackgroundSlot {
   _HeatmapBackgroundSlotImpl({
     required String screen,
     required _ibbfwb4e.HeatmapWidthClass widthClass,
-  }) : super._(
-         screen: screen,
-         widthClass: widthClass,
-       );
+  }) : super._(screen: screen, widthClass: widthClass);
 
   /// Returns a shallow copy of this [HeatmapBackgroundSlot]
   /// with some or all fields replaced by the given arguments.

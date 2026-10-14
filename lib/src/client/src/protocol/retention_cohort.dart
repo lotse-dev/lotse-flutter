@@ -93,11 +93,7 @@ class _RetentionCohortImpl extends RetentionCohort {
     required DateTime weekStart,
     required _iva6i66v.RetentionRow total,
     required List<_iva6i66v.RetentionRow> parts,
-  }) : super._(
-         weekStart: weekStart,
-         total: total,
-         parts: parts,
-       );
+  }) : super._(weekStart: weekStart, total: total, parts: parts);
 
   /// Returns a shallow copy of this [RetentionCohort]
   /// with some or all fields replaced by the given arguments.

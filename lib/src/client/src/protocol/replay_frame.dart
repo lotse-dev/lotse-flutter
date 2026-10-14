@@ -110,14 +110,7 @@ class _ReplayFrameImpl extends ReplayFrame {
     required int w,
     required int h,
     required _idt.ByteData png,
-  }) : super._(
-         tMs: tMs,
-         x: x,
-         y: y,
-         w: w,
-         h: h,
-         png: png,
-       );
+  }) : super._(tMs: tMs, x: x, y: y, w: w, h: h, png: png);
 
   /// Returns a shallow copy of this [ReplayFrame]
   /// with some or all fields replaced by the given arguments.

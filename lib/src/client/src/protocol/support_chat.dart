@@ -15,15 +15,10 @@ import 'package:serverpod_client/serverpod_client.dart' as _isc;
 /// What the SDK needs to open the support chat of one device.
 abstract class SupportChat
     implements _isc.SerializableModel, _isc.ProtocolSerialization {
-  SupportChat._({
-    required this.enabled,
-    this.feedbackId,
-  });
+  SupportChat._({required this.enabled, this.feedbackId});
 
-  factory SupportChat({
-    required bool enabled,
-    int? feedbackId,
-  }) = _SupportChatImpl;
+  factory SupportChat({required bool enabled, int? feedbackId}) =
+      _SupportChatImpl;
 
   factory SupportChat.fromJson(Map<String, dynamic> jsonSerialization) {
     return SupportChat(
@@ -43,10 +38,7 @@ abstract class SupportChat
   /// Returns a shallow copy of this [SupportChat]
   /// with some or all fields replaced by the given arguments.
   @_isc.useResult
-  SupportChat copyWith({
-    bool? enabled,
-    int? feedbackId,
-  });
+  SupportChat copyWith({bool? enabled, int? feedbackId});
   @override
   Map<String, dynamic> toJson() {
     return {
@@ -74,22 +66,14 @@ abstract class SupportChat
 class _Undefined {}
 
 class _SupportChatImpl extends SupportChat {
-  _SupportChatImpl({
-    required bool enabled,
-    int? feedbackId,
-  }) : super._(
-         enabled: enabled,
-         feedbackId: feedbackId,
-       );
+  _SupportChatImpl({required bool enabled, int? feedbackId})
+    : super._(enabled: enabled, feedbackId: feedbackId);
 
   /// Returns a shallow copy of this [SupportChat]
   /// with some or all fields replaced by the given arguments.
   @_isc.useResult
   @override
-  SupportChat copyWith({
-    bool? enabled,
-    Object? feedbackId = _Undefined,
-  }) {
+  SupportChat copyWith({bool? enabled, Object? feedbackId = _Undefined}) {
     return SupportChat(
       enabled: enabled ?? this.enabled,
       feedbackId: feedbackId is int? ? feedbackId : this.feedbackId,

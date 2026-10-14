@@ -96,10 +96,8 @@ abstract class Segment
       'projectId': projectId,
       'name': name,
       'predicate': predicate.toJson(
-        valueToJson: (v) => _ist2d7e6.Protocol().dynamicFieldToJson(
-          v,
-          forProtocol: true,
-        ),
+        valueToJson: (v) =>
+            _ist2d7e6.Protocol().dynamicFieldToJson(v, forProtocol: true),
       ),
       'createdAt': createdAt.toJson(),
     };
@@ -145,15 +143,7 @@ class _SegmentImpl extends Segment {
       name: name ?? this.name,
       predicate:
           predicate ??
-          this.predicate.map(
-            (
-              key0,
-              value0,
-            ) => MapEntry(
-              key0,
-              value0,
-            ),
-          ),
+          this.predicate.map((key0, value0) => MapEntry(key0, value0)),
       createdAt: createdAt ?? this.createdAt,
     );
   }

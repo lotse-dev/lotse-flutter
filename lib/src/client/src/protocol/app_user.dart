@@ -160,15 +160,7 @@ class _AppUserImpl extends AppUser {
       externalId: externalId ?? this.externalId,
       traits: traits is Map<String, String>?
           ? traits
-          : this.traits?.map(
-              (
-                key0,
-                value0,
-              ) => MapEntry(
-                key0,
-                value0,
-              ),
-            ),
+          : this.traits?.map((key0, value0) => MapEntry(key0, value0)),
       firstSeenAt: firstSeenAt ?? this.firstSeenAt,
       lastSeenAt: lastSeenAt ?? this.lastSeenAt,
     );

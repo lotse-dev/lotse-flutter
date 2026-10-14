@@ -85,11 +85,7 @@ class _FeedbackPageImpl extends FeedbackPage {
     required List<_i7gab86f.FeedbackListItem> items,
     required int total,
     required int pageSize,
-  }) : super._(
-         items: items,
-         total: total,
-         pageSize: pageSize,
-       );
+  }) : super._(items: items, total: total, pageSize: pageSize);
 
   /// Returns a shallow copy of this [FeedbackPage]
   /// with some or all fields replaced by the given arguments.

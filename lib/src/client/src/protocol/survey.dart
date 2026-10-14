@@ -187,10 +187,8 @@ abstract class Survey
       if (commentPrompt != null) 'commentPrompt': commentPrompt,
       if (segment != null)
         'segment': segment?.toJson(
-          valueToJson: (v) => _ist2d7e6.Protocol().dynamicFieldToJson(
-            v,
-            forProtocol: true,
-          ),
+          valueToJson: (v) =>
+              _ist2d7e6.Protocol().dynamicFieldToJson(v, forProtocol: true),
         ),
       'status': status.toJson(),
       if (startedAt != null) 'startedAt': startedAt?.toJson(),
@@ -272,15 +270,7 @@ class _SurveyImpl extends Survey {
           : this.commentPrompt,
       segment: segment is Map<String, dynamic>?
           ? segment
-          : this.segment?.map(
-              (
-                key0,
-                value0,
-              ) => MapEntry(
-                key0,
-                value0,
-              ),
-            ),
+          : this.segment?.map((key0, value0) => MapEntry(key0, value0)),
       status: status ?? this.status,
       startedAt: startedAt is DateTime? ? startedAt : this.startedAt,
       endedAt: endedAt is DateTime? ? endedAt : this.endedAt,

@@ -40,18 +40,12 @@ abstract class LotseMailNotSentException
   LotseMailNotSentException copyWith({String? message});
   @override
   Map<String, dynamic> toJson() {
-    return {
-      '__className__': 'LotseMailNotSentException',
-      'message': message,
-    };
+    return {'__className__': 'LotseMailNotSentException', 'message': message};
   }
 
   @override
   Map<String, dynamic> toJsonForProtocol() {
-    return {
-      '__className__': 'LotseMailNotSentException',
-      'message': message,
-    };
+    return {'__className__': 'LotseMailNotSentException', 'message': message};
   }
 
   @override

@@ -17,10 +17,7 @@ import 'api_key.dart' as _i72lo5ui;
 /// Returned once when a key pair is created. The secret is never shown again.
 abstract class ApiKeyCreated
     implements _isc.SerializableModel, _isc.ProtocolSerialization {
-  ApiKeyCreated._({
-    required this.apiKey,
-    required this.secretKey,
-  });
+  ApiKeyCreated._({required this.apiKey, required this.secretKey});
 
   factory ApiKeyCreated({
     required _i72lo5ui.ApiKey apiKey,
@@ -43,10 +40,7 @@ abstract class ApiKeyCreated
   /// Returns a shallow copy of this [ApiKeyCreated]
   /// with some or all fields replaced by the given arguments.
   @_isc.useResult
-  ApiKeyCreated copyWith({
-    _i72lo5ui.ApiKey? apiKey,
-    String? secretKey,
-  });
+  ApiKeyCreated copyWith({_i72lo5ui.ApiKey? apiKey, String? secretKey});
   @override
   Map<String, dynamic> toJson() {
     return {
@@ -75,19 +69,13 @@ class _ApiKeyCreatedImpl extends ApiKeyCreated {
   _ApiKeyCreatedImpl({
     required _i72lo5ui.ApiKey apiKey,
     required String secretKey,
-  }) : super._(
-         apiKey: apiKey,
-         secretKey: secretKey,
-       );
+  }) : super._(apiKey: apiKey, secretKey: secretKey);
 
   /// Returns a shallow copy of this [ApiKeyCreated]
   /// with some or all fields replaced by the given arguments.
   @_isc.useResult
   @override
-  ApiKeyCreated copyWith({
-    _i72lo5ui.ApiKey? apiKey,
-    String? secretKey,
-  }) {
+  ApiKeyCreated copyWith({_i72lo5ui.ApiKey? apiKey, String? secretKey}) {
     return ApiKeyCreated(
       apiKey: apiKey ?? this.apiKey.copyWith(),
       secretKey: secretKey ?? this.secretKey,

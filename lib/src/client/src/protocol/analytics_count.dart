@@ -16,15 +16,10 @@ import 'package:serverpod_client/serverpod_client.dart' as _isc;
 /// app version with how often it occurred.
 abstract class AnalyticsCount
     implements _isc.SerializableModel, _isc.ProtocolSerialization {
-  AnalyticsCount._({
-    this.name,
-    required this.count,
-  });
+  AnalyticsCount._({this.name, required this.count});
 
-  factory AnalyticsCount({
-    String? name,
-    required int count,
-  }) = _AnalyticsCountImpl;
+  factory AnalyticsCount({String? name, required int count}) =
+      _AnalyticsCountImpl;
 
   factory AnalyticsCount.fromJson(Map<String, dynamic> jsonSerialization) {
     return AnalyticsCount(
@@ -42,10 +37,7 @@ abstract class AnalyticsCount
   /// Returns a shallow copy of this [AnalyticsCount]
   /// with some or all fields replaced by the given arguments.
   @_isc.useResult
-  AnalyticsCount copyWith({
-    String? name,
-    int? count,
-  });
+  AnalyticsCount copyWith({String? name, int? count});
   @override
   Map<String, dynamic> toJson() {
     return {
@@ -73,22 +65,14 @@ abstract class AnalyticsCount
 class _Undefined {}
 
 class _AnalyticsCountImpl extends AnalyticsCount {
-  _AnalyticsCountImpl({
-    String? name,
-    required int count,
-  }) : super._(
-         name: name,
-         count: count,
-       );
+  _AnalyticsCountImpl({String? name, required int count})
+    : super._(name: name, count: count);
 
   /// Returns a shallow copy of this [AnalyticsCount]
   /// with some or all fields replaced by the given arguments.
   @_isc.useResult
   @override
-  AnalyticsCount copyWith({
-    Object? name = _Undefined,
-    int? count,
-  }) {
+  AnalyticsCount copyWith({Object? name = _Undefined, int? count}) {
     return AnalyticsCount(
       name: name is String? ? name : this.name,
       count: count ?? this.count,

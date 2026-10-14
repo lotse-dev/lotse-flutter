@@ -92,12 +92,7 @@ class _ProjectMemberInfoImpl extends ProjectMemberInfo {
     required String email,
     required bool owner,
     required DateTime since,
-  }) : super._(
-         userId: userId,
-         email: email,
-         owner: owner,
-         since: since,
-       );
+  }) : super._(userId: userId, email: email, owner: owner, since: since);
 
   /// Returns a shallow copy of this [ProjectMemberInfo]
   /// with some or all fields replaced by the given arguments.

@@ -18,10 +18,7 @@ import 'agent_token.dart' as _icvv29rr;
 /// again.
 abstract class AgentTokenCreated
     implements _isc.SerializableModel, _isc.ProtocolSerialization {
-  AgentTokenCreated._({
-    required this.agentToken,
-    required this.token,
-  });
+  AgentTokenCreated._({required this.agentToken, required this.token});
 
   factory AgentTokenCreated({
     required _icvv29rr.AgentToken agentToken,
@@ -44,10 +41,7 @@ abstract class AgentTokenCreated
   /// Returns a shallow copy of this [AgentTokenCreated]
   /// with some or all fields replaced by the given arguments.
   @_isc.useResult
-  AgentTokenCreated copyWith({
-    _icvv29rr.AgentToken? agentToken,
-    String? token,
-  });
+  AgentTokenCreated copyWith({_icvv29rr.AgentToken? agentToken, String? token});
   @override
   Map<String, dynamic> toJson() {
     return {
@@ -76,10 +70,7 @@ class _AgentTokenCreatedImpl extends AgentTokenCreated {
   _AgentTokenCreatedImpl({
     required _icvv29rr.AgentToken agentToken,
     required String token,
-  }) : super._(
-         agentToken: agentToken,
-         token: token,
-       );
+  }) : super._(agentToken: agentToken, token: token);
 
   /// Returns a shallow copy of this [AgentTokenCreated]
   /// with some or all fields replaced by the given arguments.

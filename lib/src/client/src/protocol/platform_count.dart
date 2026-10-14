@@ -16,10 +16,7 @@ import 'device_platform.dart' as _ij3iar7l;
 /// Active devices of one platform in AnalyticsOverview.
 abstract class PlatformCount
     implements _isc.SerializableModel, _isc.ProtocolSerialization {
-  PlatformCount._({
-    required this.platform,
-    required this.count,
-  });
+  PlatformCount._({required this.platform, required this.count});
 
   factory PlatformCount({
     required _ij3iar7l.DevicePlatform platform,
@@ -42,10 +39,7 @@ abstract class PlatformCount
   /// Returns a shallow copy of this [PlatformCount]
   /// with some or all fields replaced by the given arguments.
   @_isc.useResult
-  PlatformCount copyWith({
-    _ij3iar7l.DevicePlatform? platform,
-    int? count,
-  });
+  PlatformCount copyWith({_ij3iar7l.DevicePlatform? platform, int? count});
   @override
   Map<String, dynamic> toJson() {
     return {
@@ -74,19 +68,13 @@ class _PlatformCountImpl extends PlatformCount {
   _PlatformCountImpl({
     required _ij3iar7l.DevicePlatform platform,
     required int count,
-  }) : super._(
-         platform: platform,
-         count: count,
-       );
+  }) : super._(platform: platform, count: count);
 
   /// Returns a shallow copy of this [PlatformCount]
   /// with some or all fields replaced by the given arguments.
   @_isc.useResult
   @override
-  PlatformCount copyWith({
-    _ij3iar7l.DevicePlatform? platform,
-    int? count,
-  }) {
+  PlatformCount copyWith({_ij3iar7l.DevicePlatform? platform, int? count}) {
     return PlatformCount(
       platform: platform ?? this.platform,
       count: count ?? this.count,

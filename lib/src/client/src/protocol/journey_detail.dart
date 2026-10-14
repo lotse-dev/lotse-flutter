@@ -90,11 +90,7 @@ class _JourneyDetailImpl extends JourneyDetail {
     required _iuh01ynj.Journey journey,
     required List<_iv6aasei.Campaign> variants,
     required int assigned,
-  }) : super._(
-         journey: journey,
-         variants: variants,
-         assigned: assigned,
-       );
+  }) : super._(journey: journey, variants: variants, assigned: assigned);
 
   /// Returns a shallow copy of this [JourneyDetail]
   /// with some or all fields replaced by the given arguments.

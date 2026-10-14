@@ -23,6 +23,7 @@ abstract class DeviceRegistration
     required this.locale,
     this.appVersion,
     this.installReferrer,
+    this.appBundleId,
   });
 
   factory DeviceRegistration({
@@ -32,6 +33,7 @@ abstract class DeviceRegistration
     required String locale,
     String? appVersion,
     String? installReferrer,
+    String? appBundleId,
   }) = _DeviceRegistrationImpl;
 
   factory DeviceRegistration.fromJson(Map<String, dynamic> jsonSerialization) {
@@ -44,6 +46,7 @@ abstract class DeviceRegistration
       locale: jsonSerialization['locale'] as String,
       appVersion: jsonSerialization['appVersion'] as String?,
       installReferrer: jsonSerialization['installReferrer'] as String?,
+      appBundleId: jsonSerialization['appBundleId'] as String?,
     );
   }
 
@@ -59,6 +62,11 @@ abstract class DeviceRegistration
 
   String? installReferrer;
 
+  /// Android package name or iOS bundle identifier of the running app. Picks
+  /// the push credential of the matching app. Null from SDKs before 0.1.2
+  /// and on the web.
+  String? appBundleId;
+
   /// Returns a shallow copy of this [DeviceRegistration]
   /// with some or all fields replaced by the given arguments.
   @_isc.useResult
@@ -69,6 +77,7 @@ abstract class DeviceRegistration
     String? locale,
     String? appVersion,
     String? installReferrer,
+    String? appBundleId,
   });
   @override
   Map<String, dynamic> toJson() {
@@ -80,6 +89,7 @@ abstract class DeviceRegistration
       'locale': locale,
       if (appVersion != null) 'appVersion': appVersion,
       if (installReferrer != null) 'installReferrer': installReferrer,
+      if (appBundleId != null) 'appBundleId': appBundleId,
     };
   }
 
@@ -93,6 +103,7 @@ abstract class DeviceRegistration
       'locale': locale,
       if (appVersion != null) 'appVersion': appVersion,
       if (installReferrer != null) 'installReferrer': installReferrer,
+      if (appBundleId != null) 'appBundleId': appBundleId,
     };
   }
 
@@ -112,6 +123,7 @@ class _DeviceRegistrationImpl extends DeviceRegistration {
     required String locale,
     String? appVersion,
     String? installReferrer,
+    String? appBundleId,
   }) : super._(
          installId: installId,
          platform: platform,
@@ -119,6 +131,7 @@ class _DeviceRegistrationImpl extends DeviceRegistration {
          locale: locale,
          appVersion: appVersion,
          installReferrer: installReferrer,
+         appBundleId: appBundleId,
        );
 
   /// Returns a shallow copy of this [DeviceRegistration]
@@ -132,6 +145,7 @@ class _DeviceRegistrationImpl extends DeviceRegistration {
     String? locale,
     Object? appVersion = _Undefined,
     Object? installReferrer = _Undefined,
+    Object? appBundleId = _Undefined,
   }) {
     return DeviceRegistration(
       installId: installId ?? this.installId,
@@ -142,6 +156,7 @@ class _DeviceRegistrationImpl extends DeviceRegistration {
       installReferrer: installReferrer is String?
           ? installReferrer
           : this.installReferrer,
+      appBundleId: appBundleId is String? ? appBundleId : this.appBundleId,
     );
   }
 }

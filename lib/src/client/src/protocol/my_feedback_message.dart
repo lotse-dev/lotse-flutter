@@ -94,12 +94,7 @@ class _MyFeedbackMessageImpl extends MyFeedbackMessage {
     required _imklq58l.FeedbackMessageAuthor author,
     required String body,
     required DateTime createdAt,
-  }) : super._(
-         id: id,
-         author: author,
-         body: body,
-         createdAt: createdAt,
-       );
+  }) : super._(id: id, author: author, body: body, createdAt: createdAt);
 
   /// Returns a shallow copy of this [MyFeedbackMessage]
   /// with some or all fields replaced by the given arguments.

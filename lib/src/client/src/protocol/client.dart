@@ -13,43 +13,60 @@
 import 'dart:async' as _ida;
 import 'dart:typed_data' as _idt;
 import 'package:http/http.dart' as _i85jenna;
-import 'package:lotse/src/client/src/protocol/acquisition_report.dart' as _i20y0aod;
+import 'package:lotse/src/client/src/protocol/acquisition_report.dart'
+    as _i20y0aod;
 import 'package:lotse/src/client/src/protocol/agent_token.dart' as _izywjc6s;
 import 'package:lotse/src/client/src/protocol/agent_token_created.dart'
     as _ire6rsvy;
-import 'package:lotse/src/client/src/protocol/agent_token_level.dart' as _iftmj5k7;
-import 'package:lotse/src/client/src/protocol/analytics_overview.dart' as _ir5ronot;
+import 'package:lotse/src/client/src/protocol/agent_token_level.dart'
+    as _iftmj5k7;
+import 'package:lotse/src/client/src/protocol/analytics_overview.dart'
+    as _ir5ronot;
 import 'package:lotse/src/client/src/protocol/api_key.dart' as _imzvo1nf;
-import 'package:lotse/src/client/src/protocol/api_key_created.dart' as _i0qvu201;
-import 'package:lotse/src/client/src/protocol/apns_environment.dart' as _iiz2r0fa;
+import 'package:lotse/src/client/src/protocol/api_key_created.dart'
+    as _i0qvu201;
+import 'package:lotse/src/client/src/protocol/apns_environment.dart'
+    as _iiz2r0fa;
 import 'package:lotse/src/client/src/protocol/app_user.dart' as _i9cgg3r7;
-import 'package:lotse/src/client/src/protocol/app_user_list_item.dart' as _itcuuu2x;
+import 'package:lotse/src/client/src/protocol/app_user_list_item.dart'
+    as _itcuuu2x;
 import 'package:lotse/src/client/src/protocol/campaign.dart' as _isnrua4r;
-import 'package:lotse/src/client/src/protocol/campaign_report.dart' as _ie9wnyd5;
+import 'package:lotse/src/client/src/protocol/campaign_report.dart'
+    as _ie9wnyd5;
 import 'package:lotse/src/client/src/protocol/csv_export.dart' as _ihn6x8sm;
-import 'package:lotse/src/client/src/protocol/csv_export_request.dart' as _ib1qclyo;
-import 'package:lotse/src/client/src/protocol/delivery_summary.dart' as _ih34aj5x;
+import 'package:lotse/src/client/src/protocol/csv_export_request.dart'
+    as _ib1qclyo;
+import 'package:lotse/src/client/src/protocol/delivery_summary.dart'
+    as _ih34aj5x;
 import 'package:lotse/src/client/src/protocol/device.dart' as _illpjbsr;
-import 'package:lotse/src/client/src/protocol/device_platform.dart' as _ipw7cd6p;
+import 'package:lotse/src/client/src/protocol/device_platform.dart'
+    as _ipw7cd6p;
 import 'package:lotse/src/client/src/protocol/device_registration.dart'
     as _ii8htaq5;
 import 'package:lotse/src/client/src/protocol/event.dart' as _i7mn5lps;
 import 'package:lotse/src/client/src/protocol/explorer_query.dart' as _i12dwnjx;
-import 'package:lotse/src/client/src/protocol/explorer_report.dart' as _isgqgait;
-import 'package:lotse/src/client/src/protocol/feature_board_item.dart' as _iktk6feb;
-import 'package:lotse/src/client/src/protocol/feature_request.dart' as _i9ewlb1w;
+import 'package:lotse/src/client/src/protocol/explorer_report.dart'
+    as _isgqgait;
+import 'package:lotse/src/client/src/protocol/feature_board_item.dart'
+    as _iktk6feb;
+import 'package:lotse/src/client/src/protocol/feature_request.dart'
+    as _i9ewlb1w;
 import 'package:lotse/src/client/src/protocol/feature_request_status.dart'
     as _iy0ugmyc;
 import 'package:lotse/src/client/src/protocol/feedback.dart' as _intnc2la;
-import 'package:lotse/src/client/src/protocol/feedback_category.dart' as _i9lhucay;
+import 'package:lotse/src/client/src/protocol/feedback_category.dart'
+    as _i9lhucay;
 import 'package:lotse/src/client/src/protocol/feedback_conversation_change.dart'
     as _iwaox72k;
-import 'package:lotse/src/client/src/protocol/feedback_detail.dart' as _ijy2s14x;
-import 'package:lotse/src/client/src/protocol/feedback_message.dart' as _i7te3iey;
+import 'package:lotse/src/client/src/protocol/feedback_detail.dart'
+    as _ijy2s14x;
+import 'package:lotse/src/client/src/protocol/feedback_message.dart'
+    as _i7te3iey;
 import 'package:lotse/src/client/src/protocol/feedback_page.dart' as _i0fj1xz3;
 import 'package:lotse/src/client/src/protocol/feedback_replay_info.dart'
     as _iq3jz10h;
-import 'package:lotse/src/client/src/protocol/feedback_status.dart' as _i7mfdxkk;
+import 'package:lotse/src/client/src/protocol/feedback_status.dart'
+    as _i7mfdxkk;
 import 'package:lotse/src/client/src/protocol/feedback_submission.dart'
     as _ift03pyz;
 import 'package:lotse/src/client/src/protocol/funnel_report.dart' as _iu7f39kv;
@@ -79,22 +96,28 @@ import 'package:lotse/src/client/src/protocol/link.dart' as _imhn7g80;
 import 'package:lotse/src/client/src/protocol/link_click.dart' as _i95j1fet;
 import 'package:lotse/src/client/src/protocol/lotse_app.dart' as _iwe5i9u8;
 import 'package:lotse/src/client/src/protocol/my_feedback.dart' as _i7qvzrlb;
-import 'package:lotse/src/client/src/protocol/my_feedback_thread.dart' as _ixkb7t32;
+import 'package:lotse/src/client/src/protocol/my_feedback_thread.dart'
+    as _ixkb7t32;
 import 'package:lotse/src/client/src/protocol/project.dart' as _ixeiu5z6;
 import 'package:lotse/src/client/src/protocol/project_invitation_info.dart'
     as _i729nurv;
 import 'package:lotse/src/client/src/protocol/project_member_info.dart'
     as _iiynwmmr;
-import 'package:lotse/src/client/src/protocol/push_credential.dart' as _iykvszre;
+import 'package:lotse/src/client/src/protocol/push_credential.dart'
+    as _iykvszre;
 import 'package:lotse/src/client/src/protocol/push_provider.dart' as _ih2izyow;
 import 'package:lotse/src/client/src/protocol/replay_chunk.dart' as _iee74lve;
 import 'package:lotse/src/client/src/protocol/resolved_link.dart' as _i5zi1oud;
-import 'package:lotse/src/client/src/protocol/retention_report.dart' as _i50257ml;
-import 'package:lotse/src/client/src/protocol/retention_split.dart' as _i1z7vpha;
-import 'package:lotse/src/client/src/protocol/sdk_in_app_message.dart' as _izpbyx5h;
+import 'package:lotse/src/client/src/protocol/retention_report.dart'
+    as _i50257ml;
+import 'package:lotse/src/client/src/protocol/retention_split.dart'
+    as _i1z7vpha;
+import 'package:lotse/src/client/src/protocol/sdk_in_app_message.dart'
+    as _izpbyx5h;
 import 'package:lotse/src/client/src/protocol/sdk_survey.dart' as _i5ze76md;
 import 'package:lotse/src/client/src/protocol/segment.dart' as _i0v8239j;
-import 'package:lotse/src/client/src/protocol/setup_diagnosis.dart' as _irbew980;
+import 'package:lotse/src/client/src/protocol/setup_diagnosis.dart'
+    as _irbew980;
 import 'package:lotse/src/client/src/protocol/support_chat.dart' as _igjgpeew;
 import 'package:lotse/src/client/src/protocol/survey.dart' as _i9wfizaq;
 import 'package:lotse/src/client/src/protocol/survey_group.dart' as _i3k6u36k;
@@ -177,14 +200,10 @@ class EndpointEmailIdp extends _iaic.EndpointEmailIdpBase {
   _ida.Future<_iacc.AuthSuccess> login({
     required String email,
     required String password,
-  }) => caller.callServerEndpoint<_iacc.AuthSuccess>(
-    'emailIdp',
-    'login',
-    {
-      'email': email,
-      'password': password,
-    },
-  );
+  }) => caller.callServerEndpoint<_iacc.AuthSuccess>('emailIdp', 'login', {
+    'email': email,
+    'password': password,
+  });
 
   /// Verifies an account request code and returns a token
   /// that can be used to complete the account creation.
@@ -200,14 +219,11 @@ class EndpointEmailIdp extends _iaic.EndpointEmailIdpBase {
   _ida.Future<String> verifyRegistrationCode({
     required _isc.UuidValue accountRequestId,
     required String verificationCode,
-  }) => caller.callServerEndpoint<String>(
-    'emailIdp',
-    'verifyRegistrationCode',
-    {
-      'accountRequestId': accountRequestId,
-      'verificationCode': verificationCode,
-    },
-  );
+  }) =>
+      caller.callServerEndpoint<String>('emailIdp', 'verifyRegistrationCode', {
+        'accountRequestId': accountRequestId,
+        'verificationCode': verificationCode,
+      });
 
   /// Completes a new account registration, creating a new auth user with a
   /// profile and attaching the given email account to it.
@@ -230,10 +246,7 @@ class EndpointEmailIdp extends _iaic.EndpointEmailIdpBase {
   }) => caller.callServerEndpoint<_iacc.AuthSuccess>(
     'emailIdp',
     'finishRegistration',
-    {
-      'registrationToken': registrationToken,
-      'password': password,
-    },
+    {'registrationToken': registrationToken, 'password': password},
   );
 
   /// Verifies a password reset code and returns a finishPasswordResetToken
@@ -254,14 +267,11 @@ class EndpointEmailIdp extends _iaic.EndpointEmailIdpBase {
   _ida.Future<String> verifyPasswordResetCode({
     required _isc.UuidValue passwordResetRequestId,
     required String verificationCode,
-  }) => caller.callServerEndpoint<String>(
-    'emailIdp',
-    'verifyPasswordResetCode',
-    {
-      'passwordResetRequestId': passwordResetRequestId,
-      'verificationCode': verificationCode,
-    },
-  );
+  }) =>
+      caller.callServerEndpoint<String>('emailIdp', 'verifyPasswordResetCode', {
+        'passwordResetRequestId': passwordResetRequestId,
+        'verificationCode': verificationCode,
+      });
 
   /// Completes a password reset request by setting a new password.
   ///
@@ -281,21 +291,14 @@ class EndpointEmailIdp extends _iaic.EndpointEmailIdpBase {
   _ida.Future<void> finishPasswordReset({
     required String finishPasswordResetToken,
     required String newPassword,
-  }) => caller.callServerEndpoint<void>(
-    'emailIdp',
-    'finishPasswordReset',
-    {
-      'finishPasswordResetToken': finishPasswordResetToken,
-      'newPassword': newPassword,
-    },
-  );
+  }) => caller.callServerEndpoint<void>('emailIdp', 'finishPasswordReset', {
+    'finishPasswordResetToken': finishPasswordResetToken,
+    'newPassword': newPassword,
+  });
 
   @override
-  _ida.Future<bool> hasAccount() => caller.callServerEndpoint<bool>(
-    'emailIdp',
-    'hasAccount',
-    {},
-  );
+  _ida.Future<bool> hasAccount() =>
+      caller.callServerEndpoint<bool>('emailIdp', 'hasAccount', {});
 }
 
 /// By extending [RefreshJwtTokensEndpoint], the JWT token refresh endpoint
@@ -360,11 +363,7 @@ class EndpointAnalytics extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_ir5ronot.AnalyticsOverview>(
     'analytics',
     'overview',
-    {
-      'projectId': projectId,
-      'from': from,
-      'to': to,
-    },
+    {'projectId': projectId, 'from': from, 'to': to},
   );
 
   /// Clicks, installs, active after 7 days and [goalEvent] per campaign,
@@ -378,12 +377,7 @@ class EndpointAnalytics extends _isc.EndpointRef {
   }) => caller.callServerEndpoint<_i20y0aod.AcquisitionReport>(
     'analytics',
     'acquisition',
-    {
-      'projectId': projectId,
-      'from': from,
-      'to': to,
-      'goalEvent': goalEvent,
-    },
+    {'projectId': projectId, 'from': from, 'to': to, 'goalEvent': goalEvent},
   );
 
   /// Recipients, sent, opened and [goalEvent] within 24 hours of the send
@@ -395,11 +389,7 @@ class EndpointAnalytics extends _isc.EndpointRef {
   }) => caller.callServerEndpoint<_ie9wnyd5.CampaignReport>(
     'analytics',
     'campaignReport',
-    {
-      'projectId': projectId,
-      'campaignId': campaignId,
-      'goalEvent': goalEvent,
-    },
+    {'projectId': projectId, 'campaignId': campaignId, 'goalEvent': goalEvent},
   );
 
   /// The ordered funnel through [steps] for devices that did step 1 in the
@@ -412,17 +402,14 @@ class EndpointAnalytics extends _isc.EndpointRef {
     required int withinDays,
     required int conversionDays,
     _i7u407uy.FunnelSplit? split,
-  }) => caller.callServerEndpoint<_iu7f39kv.FunnelReport>(
-    'analytics',
-    'funnel',
-    {
-      'projectId': projectId,
-      'steps': steps,
-      'withinDays': withinDays,
-      'conversionDays': conversionDays,
-      'split': split,
-    },
-  );
+  }) =>
+      caller.callServerEndpoint<_iu7f39kv.FunnelReport>('analytics', 'funnel', {
+        'projectId': projectId,
+        'steps': steps,
+        'withinDays': withinDays,
+        'conversionDays': conversionDays,
+        'split': split,
+      });
 
   /// Installs in [from, to), at most [maxOverviewRange] long, by week from
   /// [from], and per week the share that sent a session_start on day 1, 7
@@ -435,12 +422,7 @@ class EndpointAnalytics extends _isc.EndpointRef {
   }) => caller.callServerEndpoint<_i50257ml.RetentionReport>(
     'analytics',
     'retention',
-    {
-      'projectId': projectId,
-      'from': from,
-      'to': to,
-      'split': split,
-    },
+    {'projectId': projectId, 'from': from, 'to': to, 'split': split},
   );
 
   /// The screens with heatmap taps in the last [days] days, on [platform] or
@@ -452,11 +434,7 @@ class EndpointAnalytics extends _isc.EndpointRef {
   }) => caller.callServerEndpoint<List<_ixzdz37m.HeatmapScreen>>(
     'analytics',
     'heatmapScreens',
-    {
-      'projectId': projectId,
-      'days': days,
-      'platform': platform,
-    },
+    {'projectId': projectId, 'days': days, 'platform': platform},
   );
 
   /// The taps of [screen] on [platform] in [widthClass] over the last
@@ -469,18 +447,15 @@ class EndpointAnalytics extends _isc.EndpointRef {
     _i0sl3x5f.HeatmapWidthClass widthClass,
     int days, {
     String? appVersion,
-  }) => caller.callServerEndpoint<_ij0uml61.HeatmapReport>(
-    'analytics',
-    'heatmap',
-    {
-      'projectId': projectId,
-      'screen': screen,
-      'platform': platform,
-      'widthClass': widthClass,
-      'days': days,
-      'appVersion': appVersion,
-    },
-  );
+  }) => caller
+      .callServerEndpoint<_ij0uml61.HeatmapReport>('analytics', 'heatmap', {
+        'projectId': projectId,
+        'screen': screen,
+        'platform': platform,
+        'widthClass': widthClass,
+        'days': days,
+        'appVersion': appVersion,
+      });
 
   /// The event of [query] per day in [from, to), at most [maxOverviewRange]
   /// long, as events and distinct devices, split as [query] says. See
@@ -493,12 +468,7 @@ class EndpointAnalytics extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_isgqgait.ExplorerReport>(
     'analytics',
     'explore',
-    {
-      'projectId': projectId,
-      'from': from,
-      'to': to,
-      'query': query,
-    },
+    {'projectId': projectId, 'from': from, 'to': to, 'query': query},
   );
 
   /// Install, click, attribution, events, feedback and pushes of the device
@@ -512,12 +482,7 @@ class EndpointAnalytics extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_iol68c7o.Timeline>(
     'analytics',
     'deviceTimeline',
-    {
-      'projectId': projectId,
-      'deviceId': deviceId,
-      'from': from,
-      'to': to,
-    },
+    {'projectId': projectId, 'deviceId': deviceId, 'from': from, 'to': to},
   );
 
   /// The timeline of every device the app last identified as the user
@@ -530,12 +495,7 @@ class EndpointAnalytics extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_iol68c7o.Timeline>(
     'analytics',
     'userTimeline',
-    {
-      'projectId': projectId,
-      'userId': userId,
-      'from': from,
-      'to': to,
-    },
+    {'projectId': projectId, 'userId': userId, 'from': from, 'to': to},
   );
 
   /// Users of the project, last seen first, optionally those whose external
@@ -547,11 +507,7 @@ class EndpointAnalytics extends _isc.EndpointRef {
   }) => caller.callServerEndpoint<List<_itcuuu2x.AppUserListItem>>(
     'analytics',
     'listUsers',
-    {
-      'projectId': projectId,
-      'search': search,
-      'limit': limit,
-    },
+    {'projectId': projectId, 'search': search, 'limit': limit},
   );
 
   /// Devices in the segment right now, and the devices that saw, tapped and
@@ -563,10 +519,7 @@ class EndpointAnalytics extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_iqeef7am.InAppMessageReport>(
     'analytics',
     'inAppMessageReport',
-    {
-      'projectId': projectId,
-      'messageId': messageId,
-    },
+    {'projectId': projectId, 'messageId': messageId},
   );
 
   /// Waiting devices, exits, and per group assigned, sent, opened, matured
@@ -578,10 +531,7 @@ class EndpointAnalytics extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_i3543zgv.JourneyReport>(
     'analytics',
     'journeyReport',
-    {
-      'projectId': projectId,
-      'journeyId': journeyId,
-    },
+    {'projectId': projectId, 'journeyId': journeyId},
   );
 
   /// Devices in the segment right now, the devices that saw and dismissed
@@ -593,10 +543,7 @@ class EndpointAnalytics extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_ivviso22.SurveyReport>(
     'analytics',
     'surveyReport',
-    {
-      'projectId': projectId,
-      'surveyId': surveyId,
-    },
+    {'projectId': projectId, 'surveyId': surveyId},
   );
 
   /// One page of the answers to the survey [surveyId], newest first, each
@@ -635,10 +582,7 @@ class EndpointAnalytics extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_ihn6x8sm.CsvExport>(
     'analytics',
     'exportCsv',
-    {
-      'projectId': projectId,
-      'request': request,
-    },
+    {'projectId': projectId, 'request': request},
   );
 }
 
@@ -668,17 +612,11 @@ class EndpointProject extends _isc.EndpointRef {
 
   /// Creates a project whose links live under `<handle>.<link base domain>`.
   /// The handle cannot be changed later.
-  _ida.Future<_ixeiu5z6.Project> createProject(
-    String name,
-    String handle,
-  ) => caller.callServerEndpoint<_ixeiu5z6.Project>(
-    'project',
-    'createProject',
-    {
-      'name': name,
-      'handle': handle,
-    },
-  );
+  _ida.Future<_ixeiu5z6.Project> createProject(String name, String handle) =>
+      caller.callServerEndpoint<_ixeiu5z6.Project>('project', 'createProject', {
+        'name': name,
+        'handle': handle,
+      });
 
   /// Deletes the project with everything in it: apps, push credentials, keys,
   /// the identity secret, links, clicks, devices, push tokens, users, events,
@@ -691,24 +629,16 @@ class EndpointProject extends _isc.EndpointRef {
   /// suspension is the operator's decision, and so is deleting such a
   /// project (deploy/README.md, "Suspending a project"). Only the owner may
   /// delete; members and invitations go with the project.
-  _ida.Future<void> deleteProject(
-    int projectId,
-    String confirmHandle,
-  ) => caller.callServerEndpoint<void>(
-    'project',
-    'deleteProject',
-    {
-      'projectId': projectId,
-      'confirmHandle': confirmHandle,
-    },
-  );
+  _ida.Future<void> deleteProject(int projectId, String confirmHandle) =>
+      caller.callServerEndpoint<void>('project', 'deleteProject', {
+        'projectId': projectId,
+        'confirmHandle': confirmHandle,
+      });
 
   _ida.Future<_ixeiu5z6.Project> getProject(int projectId) =>
-      caller.callServerEndpoint<_ixeiu5z6.Project>(
-        'project',
-        'getProject',
-        {'projectId': projectId},
-      );
+      caller.callServerEndpoint<_ixeiu5z6.Project>('project', 'getProject', {
+        'projectId': projectId,
+      });
 
   /// Switches the support chat of the project on or off. Switching it on
   /// makes the project act outside, so it needs an active project; there is
@@ -721,10 +651,7 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_ixeiu5z6.Project>(
     'project',
     'setSupportChatEnabled',
-    {
-      'projectId': projectId,
-      'enabled': enabled,
-    },
+    {'projectId': projectId, 'enabled': enabled},
   );
 
   /// Bounded by [maxAppsPerProject], so it needs no limit of its own.
@@ -742,18 +669,14 @@ class EndpointProject extends _isc.EndpointRef {
     String? teamId,
     String? appStoreId,
     List<String>? sha256Fingerprints,
-  }) => caller.callServerEndpoint<_iwe5i9u8.LotseApp>(
-    'project',
-    'createApp',
-    {
-      'projectId': projectId,
-      'platform': platform,
-      'bundleId': bundleId,
-      'teamId': teamId,
-      'appStoreId': appStoreId,
-      'sha256Fingerprints': sha256Fingerprints,
-    },
-  );
+  }) => caller.callServerEndpoint<_iwe5i9u8.LotseApp>('project', 'createApp', {
+    'projectId': projectId,
+    'platform': platform,
+    'bundleId': bundleId,
+    'teamId': teamId,
+    'appStoreId': appStoreId,
+    'sha256Fingerprints': sha256Fingerprints,
+  });
 
   /// Replaces the certificate fingerprints of the app [appId], normalized
   /// like in [createApp]. They go out through `assetlinks.json`, so this is
@@ -788,10 +711,7 @@ class EndpointProject extends _isc.EndpointRef {
   }) => caller.callServerEndpoint<_irbew980.SetupDiagnosis>(
     'project',
     'diagnoseSetup',
-    {
-      'projectId': projectId,
-      'slug': slug,
-    },
+    {'projectId': projectId, 'slug': slug},
   );
 
   /// Newest keys first, at most [maxApiKeysListed]. Only keys that are not
@@ -811,23 +731,14 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_i0qvu201.ApiKeyCreated>(
     'project',
     'createApiKey',
-    {
-      'projectId': projectId,
-      'label': label,
-    },
+    {'projectId': projectId, 'label': label},
   );
 
-  _ida.Future<void> revokeApiKey(
-    int projectId,
-    int keyId,
-  ) => caller.callServerEndpoint<void>(
-    'project',
-    'revokeApiKey',
-    {
-      'projectId': projectId,
-      'keyId': keyId,
-    },
-  );
+  _ida.Future<void> revokeApiKey(int projectId, int keyId) =>
+      caller.callServerEndpoint<void>('project', 'revokeApiKey', {
+        'projectId': projectId,
+        'keyId': keyId,
+      });
 
   /// Agent tokens of the project, newest first, at most
   /// [maxAgentTokensListed], revoked and expired ones included. The token
@@ -862,17 +773,11 @@ class EndpointProject extends _isc.EndpointRef {
 
   /// Like [revokeApiKey], only the access is checked: a suspended project
   /// can still be cleaned up. Any member may revoke any token of the project.
-  _ida.Future<void> revokeAgentToken(
-    int projectId,
-    int tokenId,
-  ) => caller.callServerEndpoint<void>(
-    'project',
-    'revokeAgentToken',
-    {
-      'projectId': projectId,
-      'tokenId': tokenId,
-    },
-  );
+  _ida.Future<void> revokeAgentToken(int projectId, int tokenId) =>
+      caller.callServerEndpoint<void>('project', 'revokeAgentToken', {
+        'projectId': projectId,
+        'tokenId': tokenId,
+      });
 
   /// Whether the project has an identity secret, since when, and whether
   /// identify requires a valid user hash. Never the secret. Reading works on
@@ -917,17 +822,12 @@ class EndpointProject extends _isc.EndpointRef {
   /// only identify gets stricter or looser, nothing is created and nothing
   /// reaches outside, so it works on a suspended project too.
   _ida.Future<_iz05sm2g.IdentityVerificationStatus>
-  setIdentityVerificationRequired(
-    int projectId,
-    bool enabled,
-  ) => caller.callServerEndpoint<_iz05sm2g.IdentityVerificationStatus>(
-    'project',
-    'setIdentityVerificationRequired',
-    {
-      'projectId': projectId,
-      'enabled': enabled,
-    },
-  );
+  setIdentityVerificationRequired(int projectId, bool enabled) =>
+      caller.callServerEndpoint<_iz05sm2g.IdentityVerificationStatus>(
+        'project',
+        'setIdentityVerificationRequired',
+        {'projectId': projectId, 'enabled': enabled},
+      );
 
   /// Newest lastSeenAt first, ties by descending id so the order is total.
   /// Pass [attributedLinkId] to get only the devices attributed to that link,
@@ -949,17 +849,11 @@ class EndpointProject extends _isc.EndpointRef {
 
   /// One device, for the device detail the feedback inbox links to. A device
   /// of another project is not found, like an unknown one.
-  _ida.Future<_illpjbsr.Device> getDevice(
-    int projectId,
-    int deviceId,
-  ) => caller.callServerEndpoint<_illpjbsr.Device>(
-    'project',
-    'getDevice',
-    {
-      'projectId': projectId,
-      'deviceId': deviceId,
-    },
-  );
+  _ida.Future<_illpjbsr.Device> getDevice(int projectId, int deviceId) =>
+      caller.callServerEndpoint<_illpjbsr.Device>('project', 'getDevice', {
+        'projectId': projectId,
+        'deviceId': deviceId,
+      });
 
   /// Events of the project, newest first. [limit] defaults to
   /// [defaultReadLimit] and is capped at [maxEventListLimit].
@@ -976,33 +870,21 @@ class EndpointProject extends _isc.EndpointRef {
   }) => caller.callServerEndpoint<List<_i7mn5lps.Event>>(
     'project',
     'listEvents',
-    {
-      'projectId': projectId,
-      'sinceId': sinceId,
-      'limit': limit,
-    },
+    {'projectId': projectId, 'sinceId': sinceId, 'limit': limit},
   );
 
   /// Newest links first. Bounded by [maxLinksPerProject], so the whole list
   /// fits into one call and needs no limit of its own.
   _ida.Future<List<_imhn7g80.Link>> listLinks(int projectId) =>
-      caller.callServerEndpoint<List<_imhn7g80.Link>>(
-        'project',
-        'listLinks',
-        {'projectId': projectId},
-      );
+      caller.callServerEndpoint<List<_imhn7g80.Link>>('project', 'listLinks', {
+        'projectId': projectId,
+      });
 
-  _ida.Future<_imhn7g80.Link> getLink(
-    int projectId,
-    int linkId,
-  ) => caller.callServerEndpoint<_imhn7g80.Link>(
-    'project',
-    'getLink',
-    {
-      'projectId': projectId,
-      'linkId': linkId,
-    },
-  );
+  _ida.Future<_imhn7g80.Link> getLink(int projectId, int linkId) =>
+      caller.callServerEndpoint<_imhn7g80.Link>('project', 'getLink', {
+        'projectId': projectId,
+        'linkId': linkId,
+      });
 
   /// Creates a link under /l/[slug] on the project's link domain. Slugs are
   /// unique per project.
@@ -1016,21 +898,17 @@ class EndpointProject extends _isc.EndpointRef {
     String? fallbackIos,
     String? fallbackAndroid,
     String? fallbackWeb,
-  }) => caller.callServerEndpoint<_imhn7g80.Link>(
-    'project',
-    'createLink',
-    {
-      'projectId': projectId,
-      'slug': slug,
-      'targetPath': targetPath,
-      'campaign': campaign,
-      'source': source,
-      'medium': medium,
-      'fallbackIos': fallbackIos,
-      'fallbackAndroid': fallbackAndroid,
-      'fallbackWeb': fallbackWeb,
-    },
-  );
+  }) => caller.callServerEndpoint<_imhn7g80.Link>('project', 'createLink', {
+    'projectId': projectId,
+    'slug': slug,
+    'targetPath': targetPath,
+    'campaign': campaign,
+    'source': source,
+    'medium': medium,
+    'fallbackIos': fallbackIos,
+    'fallbackAndroid': fallbackAndroid,
+    'fallbackWeb': fallbackWeb,
+  });
 
   /// Newest clicks of one link first, ties by descending id so the order is
   /// total. [limit] defaults to [defaultReadLimit] and is capped at
@@ -1042,11 +920,7 @@ class EndpointProject extends _isc.EndpointRef {
   }) => caller.callServerEndpoint<List<_i95j1fet.LinkClick>>(
     'project',
     'listLinkClicks',
-    {
-      'projectId': projectId,
-      'linkId': linkId,
-      'limit': limit,
-    },
+    {'projectId': projectId, 'linkId': linkId, 'limit': limit},
   );
 
   /// Stores the FCM service account of [appId], encrypted. Replaces an
@@ -1105,11 +979,7 @@ class EndpointProject extends _isc.EndpointRef {
   }) => caller.callServerEndpoint<_iykvszre.PushCredential?>(
     'project',
     'getPushCredential',
-    {
-      'projectId': projectId,
-      'appId': appId,
-      'provider': provider,
-    },
+    {'projectId': projectId, 'appId': appId, 'provider': provider},
   );
 
   /// Newest campaigns first, at most [maxCampaignsListed]. Sent campaigns
@@ -1121,32 +991,20 @@ class EndpointProject extends _isc.EndpointRef {
         {'projectId': projectId},
       );
 
-  _ida.Future<_isnrua4r.Campaign> getCampaign(
-    int projectId,
-    int campaignId,
-  ) => caller.callServerEndpoint<_isnrua4r.Campaign>(
-    'project',
-    'getCampaign',
-    {
-      'projectId': projectId,
-      'campaignId': campaignId,
-    },
-  );
+  _ida.Future<_isnrua4r.Campaign> getCampaign(int projectId, int campaignId) =>
+      caller.callServerEndpoint<_isnrua4r.Campaign>('project', 'getCampaign', {
+        'projectId': projectId,
+        'campaignId': campaignId,
+      });
 
   /// Number of devices of the project that [segment] matches right now. The
   /// console shows it live while the segment is edited. [segment] is the
   /// predicate as JSON text; an invalid one is rejected, never counted as 0.
-  _ida.Future<int> segmentCount(
-    int projectId,
-    String? segment,
-  ) => caller.callServerEndpoint<int>(
-    'project',
-    'segmentCount',
-    {
-      'projectId': projectId,
-      'segment': segment,
-    },
-  );
+  _ida.Future<int> segmentCount(int projectId, String? segment) =>
+      caller.callServerEndpoint<int>('project', 'segmentCount', {
+        'projectId': projectId,
+        'segment': segment,
+      });
 
   /// The saved segments of the project, by name. Bounded by
   /// [maxSegmentsPerProject], so the list needs no limit of its own.
@@ -1167,26 +1025,16 @@ class EndpointProject extends _isc.EndpointRef {
   }) => caller.callServerEndpoint<_i0v8239j.Segment>(
     'project',
     'createSegment',
-    {
-      'projectId': projectId,
-      'name': name,
-      'segment': segment,
-    },
+    {'projectId': projectId, 'name': name, 'segment': segment},
   );
 
   /// Deletes a saved segment. Campaigns keep their copy of the predicate.
   /// Works on a suspended project too.
-  _ida.Future<void> deleteSegment(
-    int projectId,
-    int segmentId,
-  ) => caller.callServerEndpoint<void>(
-    'project',
-    'deleteSegment',
-    {
-      'projectId': projectId,
-      'segmentId': segmentId,
-    },
-  );
+  _ida.Future<void> deleteSegment(int projectId, int segmentId) =>
+      caller.callServerEndpoint<void>('project', 'deleteSegment', {
+        'projectId': projectId,
+        'segmentId': segmentId,
+      });
 
   /// Creates a campaign in status draft. [linkId] must belong to the project
   /// and decides which app route the push opens. [segment] is the audience
@@ -1199,17 +1047,14 @@ class EndpointProject extends _isc.EndpointRef {
     required String body,
     int? linkId,
     String? segment,
-  }) => caller.callServerEndpoint<_isnrua4r.Campaign>(
-    'project',
-    'createCampaign',
-    {
-      'projectId': projectId,
-      'title': title,
-      'body': body,
-      'linkId': linkId,
-      'segment': segment,
-    },
-  );
+  }) => caller
+      .callServerEndpoint<_isnrua4r.Campaign>('project', 'createCampaign', {
+        'projectId': projectId,
+        'title': title,
+        'body': body,
+        'linkId': linkId,
+        'segment': segment,
+      });
 
   /// Creates one pending delivery per device of the project that matches the
   /// campaign's segment and has a valid token for a push credential of the
@@ -1223,17 +1068,11 @@ class EndpointProject extends _isc.EndpointRef {
   /// Calling this again while the campaign is in sending creates nothing and
   /// returns the campaign, and restarts the worker if it never got going. A
   /// finished campaign is refused.
-  _ida.Future<_isnrua4r.Campaign> sendCampaign(
-    int projectId,
-    int campaignId,
-  ) => caller.callServerEndpoint<_isnrua4r.Campaign>(
-    'project',
-    'sendCampaign',
-    {
-      'projectId': projectId,
-      'campaignId': campaignId,
-    },
-  );
+  _ida.Future<_isnrua4r.Campaign> sendCampaign(int projectId, int campaignId) =>
+      caller.callServerEndpoint<_isnrua4r.Campaign>('project', 'sendCampaign', {
+        'projectId': projectId,
+        'campaignId': campaignId,
+      });
 
   /// Plans the send of a draft for [sendAt], at least [minScheduleLead] and
   /// at most [maxScheduleAhead] from now. A scheduled campaign can be moved
@@ -1252,11 +1091,7 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_isnrua4r.Campaign>(
     'project',
     'scheduleCampaign',
-    {
-      'projectId': projectId,
-      'campaignId': campaignId,
-      'sendAt': sendAt,
-    },
+    {'projectId': projectId, 'campaignId': campaignId, 'sendAt': sendAt},
   );
 
   /// Takes a scheduled campaign back to draft and cancels its planned send.
@@ -1269,10 +1104,7 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_isnrua4r.Campaign>(
     'project',
     'unscheduleCampaign',
-    {
-      'projectId': projectId,
-      'campaignId': campaignId,
-    },
+    {'projectId': projectId, 'campaignId': campaignId},
   );
 
   /// Delivery counts of one campaign, which is what the console polls.
@@ -1282,10 +1114,7 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_ih34aj5x.DeliverySummary>(
     'project',
     'deliverySummary',
-    {
-      'projectId': projectId,
-      'campaignId': campaignId,
-    },
+    {'projectId': projectId, 'campaignId': campaignId},
   );
 
   /// The newest journeys with their variants and assigned devices, at most
@@ -1303,10 +1132,7 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_ipj5sx6m.JourneyDetail>(
     'project',
     'getJourney',
-    {
-      'projectId': projectId,
-      'journeyId': journeyId,
-    },
+    {'projectId': projectId, 'journeyId': journeyId},
   );
 
   /// Creates a journey in status draft with one campaign per variant. The
@@ -1318,10 +1144,7 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_ipj5sx6m.JourneyDetail>(
     'project',
     'createJourney',
-    {
-      'projectId': projectId,
-      'input': input,
-    },
+    {'projectId': projectId, 'input': input},
   );
 
   /// Replaces the content of a draft, variants included. An active or ended
@@ -1333,11 +1156,7 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_ipj5sx6m.JourneyDetail>(
     'project',
     'updateJourney',
-    {
-      'projectId': projectId,
-      'journeyId': journeyId,
-      'input': input,
-    },
+    {'projectId': projectId, 'journeyId': journeyId, 'input': input},
   );
 
   /// Decides the devices of a draft from now on. Refused beyond
@@ -1349,10 +1168,7 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_ipj5sx6m.JourneyDetail>(
     'project',
     'activateJourney',
-    {
-      'projectId': projectId,
-      'journeyId': journeyId,
-    },
+    {'projectId': projectId, 'journeyId': journeyId},
   );
 
   /// Makes [variant] (0 for A, 1 for B) the winner of an active journey,
@@ -1364,11 +1180,7 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_ipj5sx6m.JourneyDetail>(
     'project',
     'pickJourneyWinner',
-    {
-      'projectId': projectId,
-      'journeyId': journeyId,
-      'variant': variant,
-    },
+    {'projectId': projectId, 'journeyId': journeyId, 'variant': variant},
   );
 
   /// Stops deciding devices, a draft included. Final. Cleanup, so it works
@@ -1379,26 +1191,17 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_ipj5sx6m.JourneyDetail>(
     'project',
     'endJourney',
-    {
-      'projectId': projectId,
-      'journeyId': journeyId,
-    },
+    {'projectId': projectId, 'journeyId': journeyId},
   );
 
   /// Deletes a draft or ended journey with its variants, their deliveries
   /// and its entries; the events stay. Cleanup, so it works on a suspended
   /// project too.
-  _ida.Future<void> deleteJourney(
-    int projectId,
-    int journeyId,
-  ) => caller.callServerEndpoint<void>(
-    'project',
-    'deleteJourney',
-    {
-      'projectId': projectId,
-      'journeyId': journeyId,
-    },
-  );
+  _ida.Future<void> deleteJourney(int projectId, int journeyId) =>
+      caller.callServerEndpoint<void>('project', 'deleteJourney', {
+        'projectId': projectId,
+        'journeyId': journeyId,
+      });
 
   /// The newest in-app messages with the devices that saw and tapped each,
   /// at most [maxInAppMessagesListed].
@@ -1416,10 +1219,7 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_iuaghtaj.InAppMessage>(
     'project',
     'getInAppMessage',
-    {
-      'projectId': projectId,
-      'messageId': messageId,
-    },
+    {'projectId': projectId, 'messageId': messageId},
   );
 
   /// Creates an in-app message in status draft. [linkId] must belong to the
@@ -1481,10 +1281,7 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_iuaghtaj.InAppMessage>(
     'project',
     'activateInAppMessage',
-    {
-      'projectId': projectId,
-      'messageId': messageId,
-    },
+    {'projectId': projectId, 'messageId': messageId},
   );
 
   /// Stops delivering the message, a draft included. Final. Cleanup, so it
@@ -1495,10 +1292,7 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_iuaghtaj.InAppMessage>(
     'project',
     'endInAppMessage',
-    {
-      'projectId': projectId,
-      'messageId': messageId,
-    },
+    {'projectId': projectId, 'messageId': messageId},
   );
 
   /// The newest surveys, at most [maxSurveysListed].
@@ -1509,17 +1303,11 @@ class EndpointProject extends _isc.EndpointRef {
         {'projectId': projectId},
       );
 
-  _ida.Future<_i9wfizaq.Survey> getSurvey(
-    int projectId,
-    int surveyId,
-  ) => caller.callServerEndpoint<_i9wfizaq.Survey>(
-    'project',
-    'getSurvey',
-    {
-      'projectId': projectId,
-      'surveyId': surveyId,
-    },
-  );
+  _ida.Future<_i9wfizaq.Survey> getSurvey(int projectId, int surveyId) =>
+      caller.callServerEndpoint<_i9wfizaq.Survey>('project', 'getSurvey', {
+        'projectId': projectId,
+        'surveyId': surveyId,
+      });
 
   /// Creates a survey in status draft. [choices] only for
   /// [SurveyKind.choice], [askComment] and [commentPrompt] only for
@@ -1533,19 +1321,15 @@ class EndpointProject extends _isc.EndpointRef {
     required bool askComment,
     String? commentPrompt,
     String? segment,
-  }) => caller.callServerEndpoint<_i9wfizaq.Survey>(
-    'project',
-    'createSurvey',
-    {
-      'projectId': projectId,
-      'kind': kind,
-      'question': question,
-      'choices': choices,
-      'askComment': askComment,
-      'commentPrompt': commentPrompt,
-      'segment': segment,
-    },
-  );
+  }) => caller.callServerEndpoint<_i9wfizaq.Survey>('project', 'createSurvey', {
+    'projectId': projectId,
+    'kind': kind,
+    'question': question,
+    'choices': choices,
+    'askComment': askComment,
+    'commentPrompt': commentPrompt,
+    'segment': segment,
+  });
 
   /// Replaces the content of a draft, its kind included. An active or ended
   /// survey is refused.
@@ -1558,63 +1342,41 @@ class EndpointProject extends _isc.EndpointRef {
     required bool askComment,
     String? commentPrompt,
     String? segment,
-  }) => caller.callServerEndpoint<_i9wfizaq.Survey>(
-    'project',
-    'updateSurvey',
-    {
-      'projectId': projectId,
-      'surveyId': surveyId,
-      'kind': kind,
-      'question': question,
-      'choices': choices,
-      'askComment': askComment,
-      'commentPrompt': commentPrompt,
-      'segment': segment,
-    },
-  );
+  }) => caller.callServerEndpoint<_i9wfizaq.Survey>('project', 'updateSurvey', {
+    'projectId': projectId,
+    'surveyId': surveyId,
+    'kind': kind,
+    'question': question,
+    'choices': choices,
+    'askComment': askComment,
+    'commentPrompt': commentPrompt,
+    'segment': segment,
+  });
 
   /// Delivers a draft from now on. Refused beyond
   /// [maxActiveSurveysPerProject]; an active survey stays as it is.
-  _ida.Future<_i9wfizaq.Survey> activateSurvey(
-    int projectId,
-    int surveyId,
-  ) => caller.callServerEndpoint<_i9wfizaq.Survey>(
-    'project',
-    'activateSurvey',
-    {
-      'projectId': projectId,
-      'surveyId': surveyId,
-    },
-  );
+  _ida.Future<_i9wfizaq.Survey> activateSurvey(int projectId, int surveyId) =>
+      caller.callServerEndpoint<_i9wfizaq.Survey>('project', 'activateSurvey', {
+        'projectId': projectId,
+        'surveyId': surveyId,
+      });
 
   /// Stops delivering the survey, a draft included. Final. Cleanup, so it
   /// works on a suspended project too.
-  _ida.Future<_i9wfizaq.Survey> endSurvey(
-    int projectId,
-    int surveyId,
-  ) => caller.callServerEndpoint<_i9wfizaq.Survey>(
-    'project',
-    'endSurvey',
-    {
-      'projectId': projectId,
-      'surveyId': surveyId,
-    },
-  );
+  _ida.Future<_i9wfizaq.Survey> endSurvey(int projectId, int surveyId) =>
+      caller.callServerEndpoint<_i9wfizaq.Survey>('project', 'endSurvey', {
+        'projectId': projectId,
+        'surveyId': surveyId,
+      });
 
   /// Deletes the survey in any status, its answers with it. The events
   /// survey_view, survey_dismiss and survey_answered stay; they hold no
   /// comment. Cleanup, so it works on a suspended project too.
-  _ida.Future<void> deleteSurvey(
-    int projectId,
-    int surveyId,
-  ) => caller.callServerEndpoint<void>(
-    'project',
-    'deleteSurvey',
-    {
-      'projectId': projectId,
-      'surveyId': surveyId,
-    },
-  );
+  _ida.Future<void> deleteSurvey(int projectId, int surveyId) =>
+      caller.callServerEndpoint<void>('project', 'deleteSurvey', {
+        'projectId': projectId,
+        'surveyId': surveyId,
+      });
 
   /// One page of the feedback inbox, newest first. Every filter is optional;
   /// [platform] and [campaign] look at the device that sent the message and
@@ -1630,20 +1392,17 @@ class EndpointProject extends _isc.EndpointRef {
     String? campaign,
     bool? waitingForReply,
     int? page,
-  }) => caller.callServerEndpoint<_i0fj1xz3.FeedbackPage>(
-    'project',
-    'listFeedback',
-    {
-      'projectId': projectId,
-      'status': status,
-      'category': category,
-      'platform': platform,
-      'appVersion': appVersion,
-      'campaign': campaign,
-      'waitingForReply': waitingForReply,
-      'page': page,
-    },
-  );
+  }) => caller
+      .callServerEndpoint<_i0fj1xz3.FeedbackPage>('project', 'listFeedback', {
+        'projectId': projectId,
+        'status': status,
+        'category': category,
+        'platform': platform,
+        'appVersion': appVersion,
+        'campaign': campaign,
+        'waitingForReply': waitingForReply,
+        'page': page,
+      });
 
   /// One message with what Lotse knows around it: the device, the link it is
   /// attributed to, the [feedbackEventsBefore] events the device sent before
@@ -1655,10 +1414,7 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_ijy2s14x.FeedbackDetail>(
     'project',
     'getFeedback',
-    {
-      'projectId': projectId,
-      'feedbackId': feedbackId,
-    },
+    {'projectId': projectId, 'feedbackId': feedbackId},
   );
 
   /// Appends a reply of the team to the conversation and announces it on the
@@ -1671,11 +1427,7 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_i7te3iey.FeedbackMessage>(
     'project',
     'replyToFeedback',
-    {
-      'projectId': projectId,
-      'feedbackId': feedbackId,
-      'body': body,
-    },
+    {'projectId': projectId, 'feedbackId': feedbackId, 'body': body},
   );
 
   /// Live updates of one conversation while the console shows it, over a
@@ -1697,29 +1449,18 @@ class EndpointProject extends _isc.EndpointRef {
       caller.callStreamingServerEndpoint<
         _ida.Stream<_iwaox72k.FeedbackConversationChange>,
         _iwaox72k.FeedbackConversationChange
-      >(
-        'project',
-        'watchFeedback',
-        {
-          'projectId': projectId,
-          'feedbackId': feedbackId,
-        },
-        {},
-      );
+      >('project', 'watchFeedback', {
+        'projectId': projectId,
+        'feedbackId': feedbackId,
+      }, {});
 
   /// Marks the user's replies in one conversation as read by the team. Works
   /// on a suspended project too: reading is always possible.
-  _ida.Future<void> markFeedbackReadByTeam(
-    int projectId,
-    int feedbackId,
-  ) => caller.callServerEndpoint<void>(
-    'project',
-    'markFeedbackReadByTeam',
-    {
-      'projectId': projectId,
-      'feedbackId': feedbackId,
-    },
-  );
+  _ida.Future<void> markFeedbackReadByTeam(int projectId, int feedbackId) =>
+      caller.callServerEndpoint<void>('project', 'markFeedbackReadByTeam', {
+        'projectId': projectId,
+        'feedbackId': feedbackId,
+      });
 
   /// Bytes of one screenshot. This is the only way an image leaves the
   /// server; there is no web route for it.
@@ -1729,27 +1470,18 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_idt.ByteData>(
     'project',
     'getFeedbackScreenshot',
-    {
-      'projectId': projectId,
-      'screenshotId': screenshotId,
-    },
+    {'projectId': projectId, 'screenshotId': screenshotId},
   );
 
   /// Deletes one heatmap background, for example one a device uploaded that
   /// does not show the app. The slot is free again, and the next device
   /// with taps on the screen fills it. Cleanup, so it works on a suspended
   /// project too.
-  _ida.Future<void> deleteHeatmapBackground(
-    int projectId,
-    int backgroundId,
-  ) => caller.callServerEndpoint<void>(
-    'project',
-    'deleteHeatmapBackground',
-    {
-      'projectId': projectId,
-      'backgroundId': backgroundId,
-    },
-  );
+  _ida.Future<void> deleteHeatmapBackground(int projectId, int backgroundId) =>
+      caller.callServerEndpoint<void>('project', 'deleteHeatmapBackground', {
+        'projectId': projectId,
+        'backgroundId': backgroundId,
+      });
 
   /// Bytes of one heatmap background, found through
   /// `AnalyticsEndpoint.heatmap`. Like screenshots, the only way it leaves
@@ -1760,10 +1492,7 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_idt.ByteData>(
     'project',
     'getHeatmapBackground',
-    {
-      'projectId': projectId,
-      'backgroundId': backgroundId,
-    },
+    {'projectId': projectId, 'backgroundId': backgroundId},
   );
 
   /// Works on a suspended project too: triaging the inbox is cleanup.
@@ -1774,11 +1503,7 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_intnc2la.Feedback>(
     'project',
     'updateFeedbackStatus',
-    {
-      'projectId': projectId,
-      'feedbackId': feedbackId,
-      'status': status,
-    },
+    {'projectId': projectId, 'feedbackId': feedbackId, 'status': status},
   );
 
   /// The replay of the last seconds before feedback [feedbackId], or null.
@@ -1788,10 +1513,7 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_iq3jz10h.FeedbackReplayInfo?>(
     'project',
     'getFeedbackReplay',
-    {
-      'projectId': projectId,
-      'feedbackId': feedbackId,
-    },
+    {'projectId': projectId, 'feedbackId': feedbackId},
   );
 
   /// Chunk [index] of that replay. Like screenshots, the only way it leaves
@@ -1803,11 +1525,7 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_iee74lve.ReplayChunk>(
     'project',
     'getFeedbackReplayChunk',
-    {
-      'projectId': projectId,
-      'feedbackId': feedbackId,
-      'index': index,
-    },
+    {'projectId': projectId, 'feedbackId': feedbackId, 'index': index},
   );
 
   /// Deletes the trait [key] of the app user [userId] and returns the user
@@ -1823,41 +1541,25 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_i9cgg3r7.AppUser>(
     'project',
     'deleteUserTrait',
-    {
-      'projectId': projectId,
-      'userId': userId,
-      'key': key,
-    },
+    {'projectId': projectId, 'userId': userId, 'key': key},
   );
 
   /// Deletes the replay of feedback [feedbackId], keeping the message.
   /// Cleanup, so it works on a suspended project too.
-  _ida.Future<void> deleteFeedbackReplay(
-    int projectId,
-    int feedbackId,
-  ) => caller.callServerEndpoint<void>(
-    'project',
-    'deleteFeedbackReplay',
-    {
-      'projectId': projectId,
-      'feedbackId': feedbackId,
-    },
-  );
+  _ida.Future<void> deleteFeedbackReplay(int projectId, int feedbackId) =>
+      caller.callServerEndpoint<void>('project', 'deleteFeedbackReplay', {
+        'projectId': projectId,
+        'feedbackId': feedbackId,
+      });
 
   /// Deletes the message and, by cascade, its screenshots and replay. The
   /// feedback_submitted event stays; it carries no text. Works on a suspended
   /// project too.
-  _ida.Future<void> deleteFeedback(
-    int projectId,
-    int feedbackId,
-  ) => caller.callServerEndpoint<void>(
-    'project',
-    'deleteFeedback',
-    {
-      'projectId': projectId,
-      'feedbackId': feedbackId,
-    },
-  );
+  _ida.Future<void> deleteFeedback(int projectId, int feedbackId) =>
+      caller.callServerEndpoint<void>('project', 'deleteFeedback', {
+        'projectId': projectId,
+        'feedbackId': feedbackId,
+      });
 
   /// The ideas of the project with their vote counts, most votes first. By
   /// default everything that is on the board; with [archived] the archive
@@ -1869,10 +1571,7 @@ class EndpointProject extends _isc.EndpointRef {
   }) => caller.callServerEndpoint<List<_i9ewlb1w.FeatureRequest>>(
     'project',
     'listFeatureRequests',
-    {
-      'projectId': projectId,
-      'archived': archived,
-    },
+    {'projectId': projectId, 'archived': archived},
   );
 
   /// Puts a new idea on the board, where the devices of the project see it
@@ -1884,11 +1583,7 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_i9ewlb1w.FeatureRequest>(
     'project',
     'createFeatureRequest',
-    {
-      'projectId': projectId,
-      'title': title,
-      'description': description,
-    },
+    {'projectId': projectId, 'title': title, 'description': description},
   );
 
   /// Like [createFeatureRequest], and remembers the feedback message of this
@@ -1953,10 +1648,7 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_i9ewlb1w.FeatureRequest>(
     'project',
     'archiveFeatureRequest',
-    {
-      'projectId': projectId,
-      'featureRequestId': featureRequestId,
-    },
+    {'projectId': projectId, 'featureRequestId': featureRequestId},
   );
 
   /// Merges the duplicate [duplicateId] into [intoId] and returns the latter
@@ -1969,11 +1661,7 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_i9ewlb1w.FeatureRequest>(
     'project',
     'mergeFeatureRequests',
-    {
-      'projectId': projectId,
-      'duplicateId': duplicateId,
-      'intoId': intoId,
-    },
+    {'projectId': projectId, 'duplicateId': duplicateId, 'intoId': intoId},
   );
 
   /// The owner first, then the members. Bounded by [maxMembersPerProject].
@@ -2001,48 +1689,31 @@ class EndpointProject extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_i729nurv.ProjectInvitationInfo>(
     'project',
     'inviteMember',
-    {
-      'projectId': projectId,
-      'email': email,
-    },
+    {'projectId': projectId, 'email': email},
   );
 
   /// Cleanup, so it works on a suspended project too.
-  _ida.Future<void> revokeInvitation(
-    int projectId,
-    int invitationId,
-  ) => caller.callServerEndpoint<void>(
-    'project',
-    'revokeInvitation',
-    {
-      'projectId': projectId,
-      'invitationId': invitationId,
-    },
-  );
+  _ida.Future<void> revokeInvitation(int projectId, int invitationId) =>
+      caller.callServerEndpoint<void>('project', 'revokeInvitation', {
+        'projectId': projectId,
+        'invitationId': invitationId,
+      });
 
   /// Cleanup, so it works on a suspended project too. Revokes the agent
   /// tokens the member created for the project, see [removeMemberOf].
-  _ida.Future<void> removeMember(
-    int projectId,
-    _isc.UuidValue userId,
-  ) => caller.callServerEndpoint<void>(
-    'project',
-    'removeMember',
-    {
-      'projectId': projectId,
-      'userId': userId,
-    },
-  );
+  _ida.Future<void> removeMember(int projectId, _isc.UuidValue userId) =>
+      caller.callServerEndpoint<void>('project', 'removeMember', {
+        'projectId': projectId,
+        'userId': userId,
+      });
 
   /// A member leaves the project, and their agent tokens of the project are
   /// revoked with it. The owner cannot leave; the project would be without
   /// one.
   _ida.Future<void> leaveProject(int projectId) =>
-      caller.callServerEndpoint<void>(
-        'project',
-        'leaveProject',
-        {'projectId': projectId},
-      );
+      caller.callServerEndpoint<void>('project', 'leaveProject', {
+        'projectId': projectId,
+      });
 
   /// Accepts the invitation behind [token], the fragment of the link in the
   /// mail, for the signed-in account. It takes no project id: the token
@@ -2086,14 +1757,10 @@ class EndpointSdk extends _isc.EndpointRef {
   _ida.Future<_illpjbsr.Device> registerDevice(
     _ii8htaq5.DeviceRegistration registration, {
     String? credential,
-  }) => caller.callServerEndpoint<_illpjbsr.Device>(
-    'sdk',
-    'registerDevice',
-    {
-      'registration': registration,
-      'credential': credential,
-    },
-  );
+  }) => caller.callServerEndpoint<_illpjbsr.Device>('sdk', 'registerDevice', {
+    'registration': registration,
+    'credential': credential,
+  });
 
   /// Hands out the secret credential of the install [installId], once. The SDK
   /// calls it right after the first [registerDevice] and keeps the answer in
@@ -2104,11 +1771,9 @@ class EndpointSdk extends _isc.EndpointRef {
   /// refused with [LotseInstallCredentialException], so the install id alone
   /// never yields one.
   _ida.Future<String> claimInstallCredential(String installId) =>
-      caller.callServerEndpoint<String>(
-        'sdk',
-        'claimInstallCredential',
-        {'installId': installId},
-      );
+      caller.callServerEndpoint<String>('sdk', 'claimInstallCredential', {
+        'installId': installId,
+      });
 
   /// Ends the identity of the install [installId], for a logout or an account
   /// switch in the host app: [credential] stops working for good, no new one
@@ -2117,22 +1782,16 @@ class EndpointSdk extends _isc.EndpointRef {
   _ida.Future<void> revokeInstallCredential(
     String installId,
     String credential,
-  ) => caller.callServerEndpoint<void>(
-    'sdk',
-    'revokeInstallCredential',
-    {
-      'installId': installId,
-      'credential': credential,
-    },
-  );
+  ) => caller.callServerEndpoint<void>('sdk', 'revokeInstallCredential', {
+    'installId': installId,
+    'credential': credential,
+  });
 
   /// Resolves a slug of this project to its app route and campaign.
   _ida.Future<_i5zi1oud.ResolvedLink> resolveLink(String slug) =>
-      caller.callServerEndpoint<_i5zi1oud.ResolvedLink>(
-        'sdk',
-        'resolveLink',
-        {'slug': slug},
-      );
+      caller.callServerEndpoint<_i5zi1oud.ResolvedLink>('sdk', 'resolveLink', {
+        'slug': slug,
+      });
 
   /// The link this install came from, matched on the first call by install
   /// referrer or fingerprint. Later calls return the stored match and write
@@ -2144,10 +1803,7 @@ class EndpointSdk extends _isc.EndpointRef {
   }) => caller.callServerEndpoint<_i5zi1oud.ResolvedLink?>(
     'sdk',
     'resolveDeferredLink',
-    {
-      'installId': installId,
-      'credential': credential,
-    },
+    {'installId': installId, 'credential': credential},
   );
 
   /// Stores the provider push token of the device identified by [installId].
@@ -2162,16 +1818,12 @@ class EndpointSdk extends _isc.EndpointRef {
     String credential,
     String token,
     _ih2izyow.PushProvider provider,
-  ) => caller.callServerEndpoint<void>(
-    'sdk',
-    'registerPushToken',
-    {
-      'installId': installId,
-      'credential': credential,
-      'token': token,
-      'provider': provider,
-    },
-  );
+  ) => caller.callServerEndpoint<void>('sdk', 'registerPushToken', {
+    'installId': installId,
+    'credential': credential,
+    'token': token,
+    'provider': provider,
+  });
 
   /// Appends events for the device identified by [installId]. Number and size
   /// of the events are bounded, see `track_input.dart`; one event over a limit
@@ -2183,15 +1835,11 @@ class EndpointSdk extends _isc.EndpointRef {
     String installId,
     List<_inlxo86g.TrackedEvent> events, {
     String? credential,
-  }) => caller.callServerEndpoint<void>(
-    'sdk',
-    'track',
-    {
-      'installId': installId,
-      'events': events,
-      'credential': credential,
-    },
-  );
+  }) => caller.callServerEndpoint<void>('sdk', 'track', {
+    'installId': installId,
+    'events': events,
+    'credential': credential,
+  });
 
   /// Stores heatmap taps of the device identified by [installId]. Malformed
   /// taps refuse the call, taps older than a day or from the future are
@@ -2208,11 +1856,7 @@ class EndpointSdk extends _isc.EndpointRef {
   }) => caller.callServerEndpoint<List<_iv0jmya8.HeatmapBackgroundSlot>>(
     'sdk',
     'submitTaps',
-    {
-      'installId': installId,
-      'taps': taps,
-      'credential': credential,
-    },
+    {'installId': installId, 'taps': taps, 'credential': credential},
   );
 
   /// Stores [image] as the heatmap background of [screen] for the platform,
@@ -2235,19 +1879,15 @@ class EndpointSdk extends _isc.EndpointRef {
     int height,
     _idt.ByteData image, {
     String? credential,
-  }) => caller.callServerEndpoint<void>(
-    'sdk',
-    'submitHeatmapBackground',
-    {
-      'installId': installId,
-      'screen': screen,
-      'scrollY': scrollY,
-      'width': width,
-      'height': height,
-      'image': image,
-      'credential': credential,
-    },
-  );
+  }) => caller.callServerEndpoint<void>('sdk', 'submitHeatmapBackground', {
+    'installId': installId,
+    'screen': screen,
+    'scrollY': scrollY,
+    'width': width,
+    'height': height,
+    'image': image,
+    'credential': credential,
+  });
 
   /// Ties the device [installId] to the app user [externalId] of this project
   /// and merges [traits] over the ones stored for that user. Creates the user
@@ -2278,17 +1918,13 @@ class EndpointSdk extends _isc.EndpointRef {
     String externalId, {
     Map<String, String>? traits,
     String? userHash,
-  }) => caller.callServerEndpoint<void>(
-    'sdk',
-    'identify',
-    {
-      'installId': installId,
-      'credential': credential,
-      'externalId': externalId,
-      'traits': traits,
-      'userHash': userHash,
-    },
-  );
+  }) => caller.callServerEndpoint<void>('sdk', 'identify', {
+    'installId': installId,
+    'credential': credential,
+    'externalId': externalId,
+    'traits': traits,
+    'userHash': userHash,
+  });
 
   /// Stores a feedback message of the device identified by [installId],
   /// together with its [screenshot] when there is one, and writes
@@ -2307,16 +1943,12 @@ class EndpointSdk extends _isc.EndpointRef {
     _ift03pyz.FeedbackSubmission submission, {
     _idt.ByteData? screenshot,
     String? credential,
-  }) => caller.callServerEndpoint<int>(
-    'sdk',
-    'submitFeedback',
-    {
-      'installId': installId,
-      'submission': submission,
-      'screenshot': screenshot,
-      'credential': credential,
-    },
-  );
+  }) => caller.callServerEndpoint<int>('sdk', 'submitFeedback', {
+    'installId': installId,
+    'submission': submission,
+    'screenshot': screenshot,
+    'credential': credential,
+  });
 
   /// Stores one chunk of the replay of the last seconds before the feedback
   /// message [feedbackId], which the device [installId] sent at most
@@ -2328,16 +1960,12 @@ class EndpointSdk extends _isc.EndpointRef {
     int feedbackId,
     _iee74lve.ReplayChunk chunk, {
     String? credential,
-  }) => caller.callServerEndpoint<void>(
-    'sdk',
-    'submitFeedbackReplayChunk',
-    {
-      'installId': installId,
-      'feedbackId': feedbackId,
-      'chunk': chunk,
-      'credential': credential,
-    },
-  );
+  }) => caller.callServerEndpoint<void>('sdk', 'submitFeedbackReplayChunk', {
+    'installId': installId,
+    'feedbackId': feedbackId,
+    'chunk': chunk,
+    'credential': credential,
+  });
 
   /// The feedback messages the device identified by [installId] sent, the
   /// conversation that moved last first. At most [maxMyFeedbackListed].
@@ -2347,10 +1975,7 @@ class EndpointSdk extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<List<_i7qvzrlb.MyFeedback>>(
     'sdk',
     'listMyFeedback',
-    {
-      'installId': installId,
-      'credential': credential,
-    },
+    {'installId': installId, 'credential': credential},
   );
 
   /// One feedback message of the device with its conversation, oldest first.
@@ -2376,16 +2001,12 @@ class EndpointSdk extends _isc.EndpointRef {
     String credential,
     int feedbackId,
     String body,
-  ) => caller.callServerEndpoint<int>(
-    'sdk',
-    'replyToFeedback',
-    {
-      'installId': installId,
-      'credential': credential,
-      'feedbackId': feedbackId,
-      'body': body,
-    },
-  );
+  ) => caller.callServerEndpoint<int>('sdk', 'replyToFeedback', {
+    'installId': installId,
+    'credential': credential,
+    'feedbackId': feedbackId,
+    'body': body,
+  });
 
   /// Marks the team's replies in one of the device's own conversations as
   /// read.
@@ -2393,15 +2014,11 @@ class EndpointSdk extends _isc.EndpointRef {
     String installId,
     String credential,
     int feedbackId,
-  ) => caller.callServerEndpoint<void>(
-    'sdk',
-    'markFeedbackRead',
-    {
-      'installId': installId,
-      'credential': credential,
-      'feedbackId': feedbackId,
-    },
-  );
+  ) => caller.callServerEndpoint<void>('sdk', 'markFeedbackRead', {
+    'installId': installId,
+    'credential': credential,
+    'feedbackId': feedbackId,
+  });
 
   /// Live updates of one of the device's own conversations, over a
   /// Serverpod streaming method (WebSocket). Each element says that the
@@ -2425,16 +2042,11 @@ class EndpointSdk extends _isc.EndpointRef {
       caller.callStreamingServerEndpoint<
         _ida.Stream<_iwaox72k.FeedbackConversationChange>,
         _iwaox72k.FeedbackConversationChange
-      >(
-        'sdk',
-        'watchMyFeedback',
-        {
-          'installId': installId,
-          'credential': credential,
-          'feedbackId': feedbackId,
-        },
-        {},
-      );
+      >('sdk', 'watchMyFeedback', {
+        'installId': installId,
+        'credential': credential,
+        'feedbackId': feedbackId,
+      }, {});
 
   /// Whether the project accepts new support chats, and the running one of
   /// the device identified by [installId]. A conversation that was started
@@ -2445,10 +2057,7 @@ class EndpointSdk extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<_igjgpeew.SupportChat>(
     'sdk',
     'getSupportChat',
-    {
-      'installId': installId,
-      'credential': credential,
-    },
+    {'installId': installId, 'credential': credential},
   );
 
   /// The feature board as the device identified by [installId] sees it: the
@@ -2462,11 +2071,7 @@ class EndpointSdk extends _isc.EndpointRef {
   }) => caller.callServerEndpoint<List<_iktk6feb.FeatureBoardItem>>(
     'sdk',
     'listFeatureRequests',
-    {
-      'installId': installId,
-      'status': status,
-      'credential': credential,
-    },
+    {'installId': installId, 'status': status, 'credential': credential},
   );
 
   /// Votes for an idea and writes [featureVotedEventName] with the id of the
@@ -2477,15 +2082,12 @@ class EndpointSdk extends _isc.EndpointRef {
     String installId,
     int featureRequestId, {
     String? credential,
-  }) => caller.callServerEndpoint<_iktk6feb.FeatureBoardItem>(
-    'sdk',
-    'voteFeature',
-    {
-      'installId': installId,
-      'featureRequestId': featureRequestId,
-      'credential': credential,
-    },
-  );
+  }) => caller
+      .callServerEndpoint<_iktk6feb.FeatureBoardItem>('sdk', 'voteFeature', {
+        'installId': installId,
+        'featureRequestId': featureRequestId,
+        'credential': credential,
+      });
 
   /// Takes the vote of the device back and writes [featureUnvotedEventName].
   /// Without a vote it changes nothing.
@@ -2493,15 +2095,12 @@ class EndpointSdk extends _isc.EndpointRef {
     String installId,
     int featureRequestId, {
     String? credential,
-  }) => caller.callServerEndpoint<_iktk6feb.FeatureBoardItem>(
-    'sdk',
-    'unvoteFeature',
-    {
-      'installId': installId,
-      'featureRequestId': featureRequestId,
-      'credential': credential,
-    },
-  );
+  }) => caller
+      .callServerEndpoint<_iktk6feb.FeatureBoardItem>('sdk', 'unvoteFeature', {
+        'installId': installId,
+        'featureRequestId': featureRequestId,
+        'credential': credential,
+      });
 
   /// The in-app messages the device identified by [installId] is to show:
   /// the active messages of this project whose segment matches the device
@@ -2517,10 +2116,7 @@ class EndpointSdk extends _isc.EndpointRef {
   ) => caller.callServerEndpoint<List<_izpbyx5h.SdkInAppMessage>>(
     'sdk',
     'inAppMessages',
-    {
-      'installId': installId,
-      'credential': credential,
-    },
+    {'installId': installId, 'credential': credential},
   );
 
   /// The survey the device identified by [installId] is to show, or null:
@@ -2534,14 +2130,10 @@ class EndpointSdk extends _isc.EndpointRef {
   _ida.Future<_i5ze76md.SdkSurvey?> pendingSurvey(
     String installId,
     String credential,
-  ) => caller.callServerEndpoint<_i5ze76md.SdkSurvey?>(
-    'sdk',
-    'pendingSurvey',
-    {
-      'installId': installId,
-      'credential': credential,
-    },
-  );
+  ) => caller.callServerEndpoint<_i5ze76md.SdkSurvey?>('sdk', 'pendingSurvey', {
+    'installId': installId,
+    'credential': credential,
+  });
 
   /// Answers the survey [surveyId] once: [score] (0 to 10) for an NPS
   /// survey, optionally with [comment] where it asks for one, [choice] (the
@@ -2559,18 +2151,14 @@ class EndpointSdk extends _isc.EndpointRef {
     int? score,
     int? choice,
     String? comment,
-  }) => caller.callServerEndpoint<void>(
-    'sdk',
-    'answerSurvey',
-    {
-      'installId': installId,
-      'credential': credential,
-      'surveyId': surveyId,
-      'score': score,
-      'choice': choice,
-      'comment': comment,
-    },
-  );
+  }) => caller.callServerEndpoint<void>('sdk', 'answerSurvey', {
+    'installId': installId,
+    'credential': credential,
+    'surveyId': surveyId,
+    'score': score,
+    'choice': choice,
+    'comment': comment,
+  });
 }
 
 class Modules {
@@ -2590,12 +2178,7 @@ class Client extends _isc.ServerpodClientShared {
     dynamic securityContext,
     Duration? streamingConnectionTimeout,
     Duration? connectionTimeout,
-    Function(
-      _isc.MethodCallContext,
-      Object,
-      StackTrace,
-    )?
-    onFailedCall,
+    Function(_isc.MethodCallContext, Object, StackTrace)? onFailedCall,
     Function(_isc.MethodCallContext)? onSucceededCall,
     bool? disconnectStreamsOnLostInternetConnection,
     _i85jenna.Client? httpClientOverride,

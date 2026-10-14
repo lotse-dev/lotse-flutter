@@ -18,10 +18,7 @@ import 'identity_verification_status.dart' as _il6qcl22;
 /// shown again.
 abstract class IdentitySecretCreated
     implements _isc.SerializableModel, _isc.ProtocolSerialization {
-  IdentitySecretCreated._({
-    required this.secret,
-    required this.status,
-  });
+  IdentitySecretCreated._({required this.secret, required this.status});
 
   factory IdentitySecretCreated({
     required String secret,
@@ -79,10 +76,7 @@ class _IdentitySecretCreatedImpl extends IdentitySecretCreated {
   _IdentitySecretCreatedImpl({
     required String secret,
     required _il6qcl22.IdentityVerificationStatus status,
-  }) : super._(
-         secret: secret,
-         status: status,
-       );
+  }) : super._(secret: secret, status: status);
 
   /// Returns a shallow copy of this [IdentitySecretCreated]
   /// with some or all fields replaced by the given arguments.

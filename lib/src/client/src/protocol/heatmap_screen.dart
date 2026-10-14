@@ -44,11 +44,7 @@ abstract class HeatmapScreen
   /// Returns a shallow copy of this [HeatmapScreen]
   /// with some or all fields replaced by the given arguments.
   @_isc.useResult
-  HeatmapScreen copyWith({
-    String? screen,
-    int? taps,
-    int? rageTaps,
-  });
+  HeatmapScreen copyWith({String? screen, int? taps, int? rageTaps});
   @override
   Map<String, dynamic> toJson() {
     return {
@@ -80,21 +76,13 @@ class _HeatmapScreenImpl extends HeatmapScreen {
     required String screen,
     required int taps,
     required int rageTaps,
-  }) : super._(
-         screen: screen,
-         taps: taps,
-         rageTaps: rageTaps,
-       );
+  }) : super._(screen: screen, taps: taps, rageTaps: rageTaps);
 
   /// Returns a shallow copy of this [HeatmapScreen]
   /// with some or all fields replaced by the given arguments.
   @_isc.useResult
   @override
-  HeatmapScreen copyWith({
-    String? screen,
-    int? taps,
-    int? rageTaps,
-  }) {
+  HeatmapScreen copyWith({String? screen, int? taps, int? rageTaps}) {
     return HeatmapScreen(
       screen: screen ?? this.screen,
       taps: taps ?? this.taps,

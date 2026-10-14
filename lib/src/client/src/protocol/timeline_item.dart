@@ -195,15 +195,7 @@ class _TimelineItemImpl extends TimelineItem {
       title: title ?? this.title,
       props: props is Map<String, String>?
           ? props
-          : this.props?.map(
-              (
-                key0,
-                value0,
-              ) => MapEntry(
-                key0,
-                value0,
-              ),
-            ),
+          : this.props?.map((key0, value0) => MapEntry(key0, value0)),
       status: status is String? ? status : this.status,
       appVersion: appVersion is String? ? appVersion : this.appVersion,
       feedbackId: feedbackId is int? ? feedbackId : this.feedbackId,

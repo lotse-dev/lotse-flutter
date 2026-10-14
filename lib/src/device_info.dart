@@ -1,6 +1,7 @@
-import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/foundation.dart';
-import 'package:package_info_plus/package_info_plus.dart';
+
+import 'device_source.dart'
+    if (dart.library.js_interop) 'device_source_web.dart';
 
 /// What the SDK reports about the device it runs on.
 typedef DeviceDetails = ({
@@ -8,6 +9,7 @@ typedef DeviceDetails = ({
   String osVersion,
   String locale,
   String? appVersion,
+  String? appBundleId,
 });
 
 /// Maps a Flutter platform to the name of a Lotse device platform.
@@ -25,18 +27,27 @@ String platformName(TargetPlatform platform, {required bool isWeb}) {
 /// Collects everything the server needs to know about this install.
 Future<DeviceDetails> collectDeviceDetails() async {
   final platform = platformName(defaultTargetPlatform, isWeb: kIsWeb);
-  final packageInfo = await PackageInfo.fromPlatform();
+  final app = await readAppInfo();
   return (
     platform: platform,
-    osVersion: await _osVersion(platform),
+    osVersion: await readOsVersion(platform),
     locale: PlatformDispatcher.instance.locale.toString(),
-    appVersion: appVersionOf(packageInfo),
+    appVersion: appVersionOf(app.version, app.buildNumber),
+    appBundleId: appBundleIdOf(platform, app.packageName),
   );
 }
 
+/// The Android package name or iOS bundle id the server picks the push
+/// credential by. Null elsewhere: the web has no push and no bundle id.
+String? appBundleIdOf(String platform, String packageName) =>
+    (platform == 'android' || platform == 'ios') && packageName.isNotEmpty
+    ? packageName
+    : null;
+
 /// The version the SDK reports: `version+buildNumber`, e.g. `1.4.0+12`.
 /// Segments on `appVersion` compare against exactly this text.
-String appVersionOf(PackageInfo info) => '${info.version}+${info.buildNumber}';
+String appVersionOf(String version, String buildNumber) =>
+    '$version+$buildNumber';
 
 /// The browser and its major version from [userAgent], e.g. `Chrome 153`,
 /// which is what `osVersion` means on the web. `unknown` if neither is found.
@@ -67,31 +78,7 @@ String browserVersion(String userAgent) {
 }
 
 /// [appVersionOf] the running app.
-Future<String> currentAppVersion() async =>
-    appVersionOf(await PackageInfo.fromPlatform());
-
-Future<String> _osVersion(String platform) async {
-  final deviceInfo = DeviceInfoPlugin();
-  switch (platform) {
-    case 'android':
-      return (await deviceInfo.androidInfo).version.release;
-    case 'ios':
-      return (await deviceInfo.iosInfo).systemVersion;
-    case 'web':
-      return browserVersion((await deviceInfo.webBrowserInfo).userAgent ?? '');
-    default:
-      // Desktop has no single version field, so take the first one the
-      // platform happens to report.
-      final data = (await deviceInfo.deviceInfo).data;
-      for (final key in const [
-        'osRelease',
-        'displayVersion',
-        'versionId',
-        'appVersion',
-      ]) {
-        final value = data[key];
-        if (value is String && value.isNotEmpty) return value;
-      }
-      return 'unknown';
-  }
+Future<String> currentAppVersion() async {
+  final app = await readAppInfo();
+  return appVersionOf(app.version, app.buildNumber);
 }

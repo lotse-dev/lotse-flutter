@@ -133,15 +133,7 @@ class _TrackedEventImpl extends TrackedEvent {
       sessionId: sessionId is String? ? sessionId : this.sessionId,
       props: props is Map<String, String>?
           ? props
-          : this.props?.map(
-              (
-                key0,
-                value0,
-              ) => MapEntry(
-                key0,
-                value0,
-              ),
-            ),
+          : this.props?.map((key0, value0) => MapEntry(key0, value0)),
       clientId: clientId is String? ? clientId : this.clientId,
     );
   }

@@ -87,11 +87,7 @@ class _LotseQuotaExceededExceptionImpl extends LotseQuotaExceededException {
     required String resource,
     required int limit,
     required String message,
-  }) : super._(
-         resource: resource,
-         limit: limit,
-         message: message,
-       );
+  }) : super._(resource: resource, limit: limit, message: message);
 
   /// Returns a shallow copy of this [LotseQuotaExceededException]
   /// with some or all fields replaced by the given arguments.

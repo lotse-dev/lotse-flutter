@@ -50,12 +50,7 @@ abstract class HeatmapCell
   /// Returns a shallow copy of this [HeatmapCell]
   /// with some or all fields replaced by the given arguments.
   @_isc.useResult
-  HeatmapCell copyWith({
-    int? x,
-    int? y,
-    int? taps,
-    int? rageTaps,
-  });
+  HeatmapCell copyWith({int? x, int? y, int? taps, int? rageTaps});
   @override
   Map<String, dynamic> toJson() {
     return {
@@ -90,23 +85,13 @@ class _HeatmapCellImpl extends HeatmapCell {
     required int y,
     required int taps,
     required int rageTaps,
-  }) : super._(
-         x: x,
-         y: y,
-         taps: taps,
-         rageTaps: rageTaps,
-       );
+  }) : super._(x: x, y: y, taps: taps, rageTaps: rageTaps);
 
   /// Returns a shallow copy of this [HeatmapCell]
   /// with some or all fields replaced by the given arguments.
   @_isc.useResult
   @override
-  HeatmapCell copyWith({
-    int? x,
-    int? y,
-    int? taps,
-    int? rageTaps,
-  }) {
+  HeatmapCell copyWith({int? x, int? y, int? taps, int? rageTaps}) {
     return HeatmapCell(
       x: x ?? this.x,
       y: y ?? this.y,

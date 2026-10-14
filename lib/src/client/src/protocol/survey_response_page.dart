@@ -89,11 +89,7 @@ class _SurveyResponsePageImpl extends SurveyResponsePage {
     required List<_ibd3jznw.SurveyResponseItem> items,
     required int total,
     int? nextBeforeId,
-  }) : super._(
-         items: items,
-         total: total,
-         nextBeforeId: nextBeforeId,
-       );
+  }) : super._(items: items, total: total, nextBeforeId: nextBeforeId);
 
   /// Returns a shallow copy of this [SurveyResponsePage]
   /// with some or all fields replaced by the given arguments.

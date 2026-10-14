@@ -25,6 +25,7 @@ abstract class Device
     required this.osVersion,
     required this.locale,
     this.appVersion,
+    this.appBundleId,
     this.installReferrer,
     DateTime? firstSeenAt,
     DateTime? lastSeenAt,
@@ -45,6 +46,7 @@ abstract class Device
     required String osVersion,
     required String locale,
     String? appVersion,
+    String? appBundleId,
     String? installReferrer,
     DateTime? firstSeenAt,
     DateTime? lastSeenAt,
@@ -67,6 +69,7 @@ abstract class Device
       osVersion: jsonSerialization['osVersion'] as String,
       locale: jsonSerialization['locale'] as String,
       appVersion: jsonSerialization['appVersion'] as String?,
+      appBundleId: jsonSerialization['appBundleId'] as String?,
       installReferrer: jsonSerialization['installReferrer'] as String?,
       firstSeenAt: jsonSerialization['firstSeenAt'] == null
           ? null
@@ -121,6 +124,11 @@ abstract class Device
 
   String? appVersion;
 
+  /// Android package name or iOS bundle identifier the install reported, see
+  /// DeviceRegistration.appBundleId. Pushes go out with the credential of
+  /// the app with this bundle id and platform, if the project has one.
+  String? appBundleId;
+
   /// Raw Play Install Referrer string, reported once on Android when the app
   /// was installed through the Play Store. Used for exact attribution later.
   String? installReferrer;
@@ -161,6 +169,7 @@ abstract class Device
     String? osVersion,
     String? locale,
     String? appVersion,
+    String? appBundleId,
     String? installReferrer,
     DateTime? firstSeenAt,
     DateTime? lastSeenAt,
@@ -182,6 +191,7 @@ abstract class Device
       'osVersion': osVersion,
       'locale': locale,
       if (appVersion != null) 'appVersion': appVersion,
+      if (appBundleId != null) 'appBundleId': appBundleId,
       if (installReferrer != null) 'installReferrer': installReferrer,
       'firstSeenAt': firstSeenAt.toJson(),
       'lastSeenAt': lastSeenAt.toJson(),
@@ -208,6 +218,7 @@ abstract class Device
       'osVersion': osVersion,
       'locale': locale,
       if (appVersion != null) 'appVersion': appVersion,
+      if (appBundleId != null) 'appBundleId': appBundleId,
       if (installReferrer != null) 'installReferrer': installReferrer,
       'firstSeenAt': firstSeenAt.toJson(),
       'lastSeenAt': lastSeenAt.toJson(),
@@ -240,6 +251,7 @@ class _DeviceImpl extends Device {
     required String osVersion,
     required String locale,
     String? appVersion,
+    String? appBundleId,
     String? installReferrer,
     DateTime? firstSeenAt,
     DateTime? lastSeenAt,
@@ -257,6 +269,7 @@ class _DeviceImpl extends Device {
          osVersion: osVersion,
          locale: locale,
          appVersion: appVersion,
+         appBundleId: appBundleId,
          installReferrer: installReferrer,
          firstSeenAt: firstSeenAt,
          lastSeenAt: lastSeenAt,
@@ -280,6 +293,7 @@ class _DeviceImpl extends Device {
     String? osVersion,
     String? locale,
     Object? appVersion = _Undefined,
+    Object? appBundleId = _Undefined,
     Object? installReferrer = _Undefined,
     DateTime? firstSeenAt,
     DateTime? lastSeenAt,
@@ -298,6 +312,7 @@ class _DeviceImpl extends Device {
       osVersion: osVersion ?? this.osVersion,
       locale: locale ?? this.locale,
       appVersion: appVersion is String? ? appVersion : this.appVersion,
+      appBundleId: appBundleId is String? ? appBundleId : this.appBundleId,
       installReferrer: installReferrer is String?
           ? installReferrer
           : this.installReferrer,

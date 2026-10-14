@@ -105,13 +105,7 @@ class _ReplayMarkImpl extends ReplayMark {
     int? x,
     int? y,
     String? screen,
-  }) : super._(
-         tMs: tMs,
-         kind: kind,
-         x: x,
-         y: y,
-         screen: screen,
-       );
+  }) : super._(tMs: tMs, kind: kind, x: x, y: y, screen: screen);
 
   /// Returns a shallow copy of this [ReplayMark]
   /// with some or all fields replaced by the given arguments.

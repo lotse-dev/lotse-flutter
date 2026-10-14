@@ -18,11 +18,7 @@ import 'feedback.dart' as _iut2va9k;
 /// One row of the feedback inbox.
 abstract class FeedbackListItem
     implements _isc.SerializableModel, _isc.ProtocolSerialization {
-  FeedbackListItem._({
-    required this.feedback,
-    this.platform,
-    this.campaign,
-  });
+  FeedbackListItem._({required this.feedback, this.platform, this.campaign});
 
   factory FeedbackListItem({
     required _iut2va9k.Feedback feedback,
@@ -93,11 +89,7 @@ class _FeedbackListItemImpl extends FeedbackListItem {
     required _iut2va9k.Feedback feedback,
     _ij3iar7l.DevicePlatform? platform,
     String? campaign,
-  }) : super._(
-         feedback: feedback,
-         platform: platform,
-         campaign: campaign,
-       );
+  }) : super._(feedback: feedback, platform: platform, campaign: campaign);
 
   /// Returns a shallow copy of this [FeedbackListItem]
   /// with some or all fields replaced by the given arguments.

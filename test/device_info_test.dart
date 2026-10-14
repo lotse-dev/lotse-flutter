@@ -14,6 +14,19 @@ void main() {
     expect(platformName(TargetPlatform.android, isWeb: true), 'web');
   });
 
+  group('appBundleIdOf', () {
+    test('reports the package name on Android and iOS', () {
+      expect(appBundleIdOf('android', 'dev.nook.shop'), 'dev.nook.shop');
+      expect(appBundleIdOf('ios', 'dev.nook.shop'), 'dev.nook.shop');
+    });
+
+    test('reports nothing on the web, elsewhere or without a name', () {
+      expect(appBundleIdOf('web', 'shop'), isNull);
+      expect(appBundleIdOf('other', 'dev.nook.shop'), isNull);
+      expect(appBundleIdOf('android', ''), isNull);
+    });
+  });
+
   group('browserVersion', () {
     const agents = {
       'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '

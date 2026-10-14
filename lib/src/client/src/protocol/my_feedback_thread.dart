@@ -18,10 +18,7 @@ import 'my_feedback_message.dart' as _ikrc0jjp;
 /// One feedback message of the device with its conversation, oldest first.
 abstract class MyFeedbackThread
     implements _isc.SerializableModel, _isc.ProtocolSerialization {
-  MyFeedbackThread._({
-    required this.feedback,
-    required this.messages,
-  });
+  MyFeedbackThread._({required this.feedback, required this.messages});
 
   factory MyFeedbackThread({
     required _ivxqciuj.MyFeedback feedback,
@@ -79,10 +76,7 @@ class _MyFeedbackThreadImpl extends MyFeedbackThread {
   _MyFeedbackThreadImpl({
     required _ivxqciuj.MyFeedback feedback,
     required List<_ikrc0jjp.MyFeedbackMessage> messages,
-  }) : super._(
-         feedback: feedback,
-         messages: messages,
-       );
+  }) : super._(feedback: feedback, messages: messages);
 
   /// Returns a shallow copy of this [MyFeedbackThread]
   /// with some or all fields replaced by the given arguments.

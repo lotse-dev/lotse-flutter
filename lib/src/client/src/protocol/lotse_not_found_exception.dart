@@ -39,18 +39,12 @@ abstract class LotseNotFoundException
   LotseNotFoundException copyWith({String? message});
   @override
   Map<String, dynamic> toJson() {
-    return {
-      '__className__': 'LotseNotFoundException',
-      'message': message,
-    };
+    return {'__className__': 'LotseNotFoundException', 'message': message};
   }
 
   @override
   Map<String, dynamic> toJsonForProtocol() {
-    return {
-      '__className__': 'LotseNotFoundException',
-      'message': message,
-    };
+    return {'__className__': 'LotseNotFoundException', 'message': message};
   }
 
   @override

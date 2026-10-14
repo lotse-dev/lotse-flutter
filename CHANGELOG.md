@@ -1,3 +1,8 @@
+## 0.1.2
+
+* The SDK reports the package name (Android) or bundle id (iOS) of the app. With several apps in one project, each with its own push credential, a push now goes out with the credential of the device's own app. Older versions keep the project's first credential.
+* Web apps that use the SDK compile to WebAssembly (`flutter build web --wasm`). On the web, the SDK no longer imports the libraries of `package_info_plus`, `device_info_plus` and `flutter_local_notifications` that pull in `dart:io`.
+
 ## 0.1.1
 
 * pub.dev lists iOS and web next to Android. The SDK ran there already; only the install referrer is Android only, and the SDK skips it elsewhere.
